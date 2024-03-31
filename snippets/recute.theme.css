@@ -1,0 +1,19 @@
+a[href="/channels/1015060230222131221/1026504914131759104"]  [class^=name_],
+[class^=content_]:has([class*=modeSelected_] a[href="/channels/1015060230222131221/1026504914131759104"]) :is([class*=heading-md-semibold_], [class^=placeholder_])
+ { visibility: collapse; }
+a[href="/channels/1015060230222131221/1026504914131759104"]  [class^=name_]::before,
+[class^=content_]:has([class*=modeSelected_] a[href="/channels/1015060230222131221/1026504914131759104"]) [class*=heading-md-semibold_]::before
+ { content: "🌺-cute-people";
+   visibility: visible; }
+[class^=content_]:has([class*=modeSelected_] a[href="/channels/1015060230222131221/1026504914131759104"]) [class^=placeholder_]::before
+ { content: "Message #🌺-cute-people";
+   visibility: visible; }
+[class^=role_][data-list-item-id$="1026504932959977532"]  [class*=roleNameOverflow_]
+ { display: none; }
+[class^=role_][data-list-item-id$="1026504932959977532"]  [class^=roleName_]::after
+ { content: "cute person";
+  line-height: 1.333; }
+[class^=role_][data-list-item-id$="1026504932959977532"]  [class^=roleCircle_]
+ { background-color: #6d9 !important; }
+[class^=content_]:has([class^=bannerImg_][src*="1015060230222131221"]) [style*="color: rgb(128, 163, 255);"]
+ { color: #6d9 !important; }
