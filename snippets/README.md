@@ -4,6 +4,8 @@ dashless-extended: Replaces all dashes (-) in channel names with a font with a b
 
 lowercaser: Forces certain texts to lowercase
 
+modalsettings: settings and some other dialogs like audit log show up as a modal window
+
 randomfixes: A miscellaneous collection of random fixes I thought I'd split into a separate file
 
 recute: Make vencord server cute again
