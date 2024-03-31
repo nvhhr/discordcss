@@ -1,0 +1,53 @@
+/* this is a collection of random fixes that shouldn't be unwanted */
+
+/* fix scrollbars on newer electron*/
+*
+ { scrollbar-width: unset !important;
+   scrollbar-color: unset !important; }
+
+/*make spotify embeds wider*/
+[class^=embedSpotify_]
+ { width: 600px !important; }
+
+/*decor go away on hover*/
+[class^=avatar_]:hover + [class^=avatarDecoration_],
+[class^=avatar_]:hover [class^=avatarDecoration_]
+ { opacity: 0 !important; }
+[class^=avatarDecoration_]
+ { transition: .3s opacity; }
+
+/* make profile text scrollable*/
+[class*=lineClamp2Plus_]
+ { overflow-y: auto !important; }
+
+/* fix numbered lists */
+.markup_a7e664 ol
+ { margin-left: calc(2ch + var(--totalCharacters) * 1ch) !important; }
+
+/* improved avatar picker */
+[class^=overlayAvatar_]
+ { --xhairwidth: 2px;
+   box-shadow: none;
+   border-width: 2px;
+   &::before
+    { content: "";
+      background-color: oklch(0 0 0 /.001);
+      position: absolute;
+      backdrop-filter: invert(1);
+      width: var(--xhairwidth);
+      height: 100%;
+      left: calc(50% - (var(--xhairwidth)/2)); }
+   &::after
+    { content: "";
+      background-color: oklch(0 0 0 /.001);
+      position: absolute;
+      backdrop-filter: invert(1);
+      width: 100%;
+      height: var(--xhairwidth);
+      top: calc(50% - (var(--xhairwidth)/2)); }}
+
+/* remove backgrounds in VC, always show names */
+[class^=callContainer_]
+ { background: none !important; }
+[class*=overlayTitle_]
+ { opacity: 1 !important; }
