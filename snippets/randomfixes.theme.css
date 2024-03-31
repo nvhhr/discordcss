@@ -5,6 +5,11 @@
  { scrollbar-width: unset !important;
    scrollbar-color: unset !important; }
 
+/* fix sizing of message header icons */
+.vc-platform-indicator,
+[class^=nitroBadgeSvg_]
+ { height: 1rem; }
+
 /*make spotify embeds wider*/
 [class^=embedSpotify_]
  { width: 600px !important; }
@@ -21,7 +26,7 @@
  { overflow-y: auto !important; }
 
 /* fix numbered lists */
-.markup_a7e664 ol
+[class^=markup_] ol
  { margin-left: calc(2ch + var(--totalCharacters) * 1ch) !important; }
 
 /* improved avatar picker */
