@@ -21,9 +21,11 @@
 [class^=avatarDecoration_]
  { transition: .3s opacity; }
 
-/* make profile text scrollable*/
+/* make profile text scrollable */
 [class*=lineClamp2Plus_]
- { overflow-y: auto !important; }
+ { overflow-y: auto !important; 
+  scrollbar-color: oklch(1 0 0 /.3) transparent !important;
+  scrollbar-width: thin !important; }
 
 /* fix numbered lists */
 [class^=markup_] ol
