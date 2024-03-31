@@ -1,3 +1,5 @@
+/* replace specific channelname, rolename and rolecolor on vencord server to previous glory */
+
 a[href="/channels/1015060230222131221/1026504914131759104"]  [class^=name_],
 [class^=content_]:has([class*=modeSelected_] a[href="/channels/1015060230222131221/1026504914131759104"]) :is([class*=heading-md-semibold_], [class^=placeholder_])
  { visibility: collapse; }
