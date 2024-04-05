@@ -1,4 +1,9 @@
-/* this is a collection of random fixes that shouldn't be unwanted */
+/**
+ * @name randomfixes
+ * @author nvhhr
+ * @version 1
+ * @description a random collection of small fixes
+*/
 
 /* fix scrollbars on newer electron*/
 *
