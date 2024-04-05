@@ -1,7 +1,11 @@
-/* lowercase a bunch of texts because lowercase is cuter */
+/**
+ * @name lowercaser
+ * @author nvhhr
+ * @version 1
+ * @description lowercase a bunch of texts because lowercase is cuter */
 
 [class*="placeholder" i], /* all input field placeholders */
-[class*="tooltip" i], /* tooltips */
+/* [class*="tooltip" i], tooltips */
 [class^=membersGroup], /* memberlist group titles */
 [class^=containerDefault_] h3, /* channellist categories */
 [class*=cozyMessage_] [class^=header_] [class^=timestamp_] /* chat timestamp texts */
