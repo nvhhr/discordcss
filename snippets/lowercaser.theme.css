@@ -2,7 +2,8 @@
  * @name lowercaser
  * @author nvhhr
  * @version 1
- * @description lowercase a bunch of texts because lowercase is cuter */
+ * @description lowercase a bunch of texts because lowercase is cuter
+*/
 
 [class*="placeholder" i], /* all input field placeholders */
 /* [class*="tooltip" i], tooltips */
