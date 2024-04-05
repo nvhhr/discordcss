@@ -1,0 +1,61 @@
+/**
+ * @name actuallybasicbackground
+ * @author nvhhr
+ * @version 1
+ * @description very simple background css
+*/
+
+/*customize these*/
+:root
+ { --nvbgimg: url("link.goes/here");
+   --nvbgadjust: rgb(0 0 0 / 0); } /*
+
+/*we'll set the background image at the very bottom*/
+body
+ { background: center/cover var(--nvbgimg); }
+/*adding an extra layer on top to tone the bg for better visibility*/
+#app-mount
+ { background: var(--nvbgadjust);  }
+/*then we clear out backgrounds from a bunch of elements...*/
+[class^=app_], /*main app bg*/
+[class^=bg__], /*another bg layer*/
+[class*=guilds_], /*serverlist*/
+[class^=sidebar_], /*channellist*/
+[class^=sidebar_] [class^=container_], /*another layer on channellist*/
+[class^=chat_], /*chat bg*/
+[class^=chatContent_], /*another layer on chat*/
+[class^=chatContent_] + [class^=container_], /*memberlist*/
+[class^=chat_] [class^=wrapper_], /*voicechannel*/
+[class*=gradientContainer_], /*gradients in voicechannel*/
+[class^=channelChatWrapper_], /*voicechannel chat*/
+[class^=chatTarget_], /*voicechannel chat again*/
+[class^=channelChatWrapper_] [class^=resizeHandle_], /*voicechannel chat resizer*/
+[class^=channelChatWrapper_] [class^=container_], /*voicechannel chat yet again*/
+[class^=members_], /*another layer on memberlist*/
+[class^=member_], /*each member also has a bg */
+[class^=title_], /*top toolbar*/
+[class^=title_] [class^=children_]::after, /*topic overflow fadeout*/
+[class^=panels_], /*user panel*/
+[class^=channelTextArea_], /*chat input*/
+[class^=channelTextArea_] [class^=scrollableContainer_], /*chat input again*/
+[class^=chatContent_] > form::before, /*wtf even is this and why, discord?*/
+[data-list-id="chat-messages"] > [class^=wrapper_], /*skeleton before messages are loaded*/
+[data-list-id="chat-messages"] > [class^=wrapper_] > [class^=wrapper_], /*same tbh*/
+[class^=privateChannels_], /*DM list*/
+[class^=privateChannels_] [class^=scroller_], /*DM list again*/
+[class*=userProfileOuterUnthemed_], /*DM right sidebar when user has no profile theme*/
+[class*=userProfileOuterUnthemed_] [class^=userPanelInner_],
+[class^=sidebar_] + [class^=container_], /*friends list*/
+[class^=sidebar_] + [class^=container_] > section, /*friends list top bar*/
+[class^=nowPlayingColumn_], /* friends list right sidebar*/
+[class^=nowPlayingColumn_] > [class^=container_], /*yeah*/
+[class^=shop_], /*shop tab*/
+[class^=shop_] > section, /*shop top bar*/
+[class^=shopScroll_], /*shop content*/
+[class^=pageWrapper_] /*again*/
+ { background: none !important; }
+
+/*remove some shadows*/
+[class^=chat_]::before,
+[class^=header_]
+ { box-shadow: none; }
