@@ -10,10 +10,12 @@
  { scrollbar-width: unset !important;
    scrollbar-color: unset !important; }
 
-/* fix sizing of message header icons */
+/* fix size/spacing of message header icons */
 .vc-platform-indicator,
 [class^=nitroBadgeSvg_]
  { height: 1rem; }
+[class^=roleIcon_]
+ { margin-left: 1ch; }
 
 /*make spotify embeds wider*/
 [class^=embedSpotify_]
