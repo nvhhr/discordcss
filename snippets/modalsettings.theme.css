@@ -1,4 +1,10 @@
-/* modal settings window */
+/**
+ * @name modalsettings
+ * @author nvhhr
+ * @version 1
+ * @description modal settings window
+*/
+
 [class^=standardSidebarView_]
  { top: 0 !important; }
 [class^=layer_] + [class^=layer_]
