@@ -11,11 +11,10 @@
    --nvbgadjust: rgb(0 0 0 / 0); } /*
 
 /*we'll set the background image at the very bottom*/
-body
- { background: center/cover var(--nvbgimg); }
+body { background: center/cover var(--nvbgimg); }
 /*adding an extra layer on top to tone the bg for better visibility*/
-#app-mount
- { background: var(--nvbgadjust);  }
+#app-mount { background: var(--nvbgadjust); }
+
 /*then we clear out backgrounds from a bunch of elements...*/
 [class^=app_], /*main app bg*/
 [class^=bg__], /*another bg layer*/
@@ -25,6 +24,8 @@ body
 [class^=chat_], /*chat bg*/
 [class^=chatContent_], /*another layer on chat*/
 [class^=chatContent_] + [class^=container_], /*memberlist*/
+[class^=chat_] [class^=container_], /*forum channel*/
+[class*=mainCard_], /*forum channel entry*/
 [class^=chat_] [class^=wrapper_], /*voicechannel*/
 [class*=gradientContainer_], /*gradients in voicechannel*/
 [class^=channelChatWrapper_], /*voicechannel chat*/
@@ -32,7 +33,7 @@ body
 [class^=channelChatWrapper_] [class^=resizeHandle_], /*voicechannel chat resizer*/
 [class^=channelChatWrapper_] [class^=container_], /*voicechannel chat yet again*/
 [class^=members_], /*another layer on memberlist*/
-[class^=member_], /*each member also has a bg */
+[class^=member_], /*each member also has a bg*/
 [class^=title_], /*top toolbar*/
 [class^=title_] [class^=children_]::after, /*topic overflow fadeout*/
 [class^=panels_], /*user panel*/
