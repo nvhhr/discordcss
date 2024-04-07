@@ -1,0 +1,29 @@
+/**
+ * @name fontreplace
+ * @author nvhhr
+ * @description override fonts and fontsize
+*/
+:root
+ { /* these are the default fonts, just rplace the whole thing with whatever you want
+      for an example, --font-primary: "comic sans ms"; */
+   /* main font */
+   --font-primary: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   /* channellist categories and some other places */
+   --font-display: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   /* headlines, big texts like like in the nitro settings */
+   --font-headline: 'ABC Ginto Nord', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   /* code blocks */
+   --font-code: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+   /* font size override, because sometimes changing it in discord settings isn't ideal */
+   --nvfontsize: 12px; }
+
+html,
+[class*="heading-md-semibold"],
+[class*=text],
+[class*=input_],
+[class^=topic_],
+[class^=name_],
+[class*=item_],
+[class*=description_],
+[class*=tooltip_]
+ { font-size: var(--nvfontsize) !important; }
