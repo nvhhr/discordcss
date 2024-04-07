@@ -52,7 +52,7 @@ body { background: center/cover var(--nvbgimg); }
 [class^=sidebar_] + [class^=container_] > section, /*friends list top bar*/
 [class^=nowPlayingColumn_], /* friends list right sidebar*/
 [class^=nowPlayingColumn_] > [class^=container_], /*yeah*/
-[class^=itemCard_] /*friends list activity cards*/
+[class^=itemCard_], /*friends list activity cards*/
 [class^=shop_], /*shop tab*/
 [class^=shop_] > section, /*shop top bar*/
 [class^=shopScroll_], /*shop content*/
