@@ -1,0 +1,22 @@
+/**
+ * @name shadows
+ * @author nvhhr
+ * @description add text and image shadows
+*/
+
+:root
+ { --nvtextshadow: .1em .1em .15em oklch(0 0 0 /.3);
+   --nvimageshadow: 2px 2px 2px oklch(0 0 0 /.5); }
+
+/*add shadow to all text*/
+html
+ { text-shadow: var(--nvtextshadow); }
+/*add shadows to all images and buttons*/
+path,
+.emoji,
+[class^=avatar_],
+[class^=avatarDecoration_],
+[class^=imageWrapper_],
+[class*=roleIcon_],
+[class*=guilds_] [class^=listItem_]
+ { filter: drop-shadow(var(--nvimageshadow)); }
