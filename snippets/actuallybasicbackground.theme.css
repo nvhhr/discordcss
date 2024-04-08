@@ -37,7 +37,7 @@ body { background: center/cover var(--nvbgimg); }
 [class^=members_], /*another layer on memberlist*/
 [class^=member_], /*each member also has a bg*/
 [class^=title_], /*top toolbar*/
-[class^=title_] [class^=children_]::after, /*topic overflow fadeout*/
+[class^=children_]::after, /*toolbar overflow fadeout*/
 [class^=panels_], /*user panel*/
 [class^=channelTextArea_], /*chat input*/
 [class^=channelTextArea_] [class^=scrollableContainer_], /*chat input again*/
