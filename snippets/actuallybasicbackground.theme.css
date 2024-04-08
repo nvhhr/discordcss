@@ -61,5 +61,6 @@ body { background: center/cover var(--nvbgimg); }
 
 /*remove some shadows*/
 [class^=chat_]::before,
-[class^=header_]
+[class^=header_],
+[class^=content_]::before
  { box-shadow: none; }
