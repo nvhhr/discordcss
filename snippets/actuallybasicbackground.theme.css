@@ -24,18 +24,19 @@ body { background: center/cover var(--nvbgimg); }
 [class^=chat_], /*chat bg*/
 [class^=chatContent_], /*another layer on chat*/
 [class^=chatContent_] + [class^=container_], /*memberlist*/
+[class^=members_], /*another layer on memberlist*/
+[class^=member_], /*each member also has a bg*/
 [class^=chat_] [class^=container_], /*forum channel*/
 [class*=mainCard_], /*forum channel entry*/
-[class*=threadSidebarOpen_] ~ [class^=resizeHandle_], /*forum channel sidebar resizer*/
-[class*=threadSidebarOpen_] ~ [class^=container_], /*forum channel sidebar*/
+[class*=threadSidebarOpen_] ~ [class^=resizeHandle_], /*thread sidebar resizer*/
+[class*=threadSidebarOpen_] ~ [class^=container_], /*thread sidebar*/
+[class*=threadSidebarOpen_] ~ [class^=container_] > [class^=container_], /*thread sidabar title*/
 [class^=chat_] [class^=wrapper_], /*voicechannel*/
 [class*=gradientContainer_], /*gradients in voicechannel*/
 [class^=channelChatWrapper_], /*voicechannel chat*/
 [class^=chatTarget_], /*voicechannel chat again*/
 [class^=channelChatWrapper_] [class^=resizeHandle_], /*voicechannel chat resizer*/
 [class^=channelChatWrapper_] [class^=container_], /*voicechannel chat yet again*/
-[class^=members_], /*another layer on memberlist*/
-[class^=member_], /*each member also has a bg*/
 [class^=title_], /*top toolbar*/
 [class^=children_]::after, /*toolbar overflow fadeout*/
 [class^=panels_], /*user panel*/
@@ -43,17 +44,19 @@ body { background: center/cover var(--nvbgimg); }
 [class^=channelTextArea_] [class^=scrollableContainer_], /*chat input again*/
 [class^=chatContent_] > form::before, /*wtf even is this and why, discord?*/
 [data-list-id="chat-messages"] > [class^=wrapper_], /*skeleton before messages are loaded*/
-[data-list-id="chat-messages"] > [class^=wrapper_] > [class^=wrapper_], /*same tbh*/
+[data-list-id="chat-messages"] > [class^=wrapper_] > [class^=wrapper_], /*skeleton has many bones in it*/
 [class^=privateChannels_], /*DM list*/
 [class^=privateChannels_] [class^=scroller_], /*DM list again*/
 [class*=userProfileOuterUnthemed_], /*DM right sidebar when user has no profile theme*/
-[class*=userProfileOuterUnthemed_] [class^=userPanelInner_],
+[class*=userProfileOuterUnthemed_] [class^=userPanelInner_], /*same*/
 [class^=sidebar_] + [class^=container_], /*friends list*/
 [class^=sidebar_] + [class^=container_] > section, /*friends list top bar*/
 [class^=nowPlayingColumn_], /* friends list right sidebar*/
 [class^=nowPlayingColumn_] > [class^=container_], /*yeah*/
+[class^=nowPlayingColumn_] [class^=body_], /*activities have..*/
+[class^=nowPlayingColumn_] [class^=section_] /*..a double background too*/
 [class^=itemCard_], /*friends list activity cards*/
-[class^=shop_], /*shop tab*/
+[class^=shop_], /*shop tab content*/
 [class^=shop_] > section, /*shop top bar*/
 [class^=shopScroll_], /*shop content*/
 [class^=pageWrapper_] /*again*/
@@ -62,5 +65,7 @@ body { background: center/cover var(--nvbgimg); }
 /*remove some shadows*/
 [class^=chat_]::before,
 [class^=header_],
-[class^=content_]::before
+[class^=content_]::before,
+[class^=tabBody_]::before, /*dm list*/
+[class^=searchBar_] /*dm list search*/
  { box-shadow: none; }
