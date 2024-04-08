@@ -8,11 +8,11 @@
 /*customize these*/
 :root
  { --nvbgimg: url("link.goes/here");
-   --nvbgadjust: rgb(0 0 0 / 0); } /*
+   --nvbgadjust: rgb(0 0 0 / 0); } /*use this to tone the bg*/
 
 /*we'll set the background image at the very bottom*/
 body { background: center/cover var(--nvbgimg); }
-/*adding an extra layer on top to tone the bg for better visibility*/
+/*adding the extra toning layer on top for better visibility*/
 #app-mount { background: var(--nvbgadjust); }
 
 /*then we clear out backgrounds from a bunch of elements...*/
