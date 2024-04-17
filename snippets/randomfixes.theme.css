@@ -1,7 +1,6 @@
 /**
  * @name randomfixes
  * @author nvhhr
- * @version 1
  * @description a random collection of small fixes
 */
 
@@ -65,3 +64,11 @@
  { background: none !important; }
 [class*=overlayTitle_]
  { opacity: 1 !important; }
+
+/* show usernames in friendlist */
+[class*=discriminator_]
+ { visibility: visible; }
+[class*=discriminator_]::before
+ { content: "("; }
+[class*=discriminator_]::after
+ { content: ")"; }
