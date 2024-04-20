@@ -1,34 +1,34 @@
 Collection of css snippets.
 
-**actuallybasicbackground:**
+**actuallybasicbackground:**  
 A pretty simple and very specific style to set a background image at the bottom and clear out backgrounds from elements in front.
 
-**bordercleanup:**
+**bordercleanup:**  
 Clear out unnecessary borders and separators.
 
-**dashless-extended:**
+**dashless-extended:**  
 Replaces all dashes (-) in channel names with a font with a blank glyph, and replaces all flag emojis with Twemoji-Mozilla font (because Windows mostly).
 
-**lowercaser:**
+**lowercaser:**  
 Forces certain texts to lowercase, because lowercase is cuter.
 
-**modalsettings:**
+**modalsettings:**  
 Settings and some other dialogs like audit log show up as a modal window.
 
-**nocaption**
+**nocaption**  
 Remove titlebar.
 
-**randomfixes:**
+**randomfixes:**  
 A miscellaneous collection of random fixes that shouldn't be unwanted.
 
-**recute:**
+**recute:**  
 Make vencord server cute again (not included with main theme).
 
-**shadows:**
+**shadows:**  
 Add shadows to text and images.
 
-**squareicons:**
+**squareicons:**  
 Reduces border-radii of avatars and servericons.
 
-**betterusertags:**
+**betterusertags:**  
 Nicer bot/staff tags + new user leaf replaced to match.
