@@ -2,6 +2,9 @@
 
 This is my theme.
 
+![image](https://github.com/nvhhr/discordcss/assets/34724502/298bf4de-6483-4a03-a25d-6fd399c61b82)
+
+
 I have separated many of its features as files that should work on their own.  
 I'll be making presets for many different looks based on this base theme, stay tuned.
 
