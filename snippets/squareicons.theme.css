@@ -1,11 +1,12 @@
 /**
  * @name squareicons
  * @author nvhhr
- * @version 1
  * @description reduce border-radii
 */
 
-:root { --nviconradius: 2px; }
+:root
+ { --nviconradius: 2px; }
+
 [class*=avatar_],
 [class^=replyAvatar_],
 [class^=embedAuthorIcon_],
