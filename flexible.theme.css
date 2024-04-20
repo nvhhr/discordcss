@@ -274,6 +274,12 @@ s
  { margin-left: -70px !important;
    opacity: 1 !important; }
 
+/*small tweak to status indicators (wip)*/
+rect[mask*=status]
+ { transform: translatex(5px);}
+rect[mask*=mobile]
+ { transform: translate(15px, -3px) rotate(20deg); }
+
 /*codeblocks*/
 CODE.inline
  { padding: 1px 5px !important;
