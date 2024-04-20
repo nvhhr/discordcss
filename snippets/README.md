@@ -1,4 +1,4 @@
-Collection of css snippets.
+Collection of pretty simple css snippets, some having variables to modify.
 
 **actuallybasicbackground:**  
 A pretty simple and very specific style to set a background image at the bottom and clear out backgrounds from elements in front.
