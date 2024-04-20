@@ -3,6 +3,9 @@
 **actuallybasicbackground:**  
 A pretty simple and very specific style to set a background image at the bottom and clear out backgrounds from elements in front.
 
+**betterusertags:**  
+Nicer bot/staff tags + new user leaf replaced to match.
+
 **bordercleanup:**  
 Clear out unnecessary borders and separators.
 
@@ -29,6 +32,3 @@ Add shadows to text and images.
 
 **squareicons:**  
 Reduces border-radii of avatars and servericons.
-
-**betterusertags:**  
-Nicer bot/staff tags + new user leaf replaced to match.
