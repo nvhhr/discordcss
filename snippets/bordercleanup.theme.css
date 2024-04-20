@@ -1,0 +1,21 @@
+/**
+ * @name bordercleanup
+ * @author nvhhr
+ * @description discords without borders, for a cleaner look
+*/
+
+/*clean up separators and unnecessary borders*/
+[class^=titleWrapper_] + [class^=divider_], /*channelname|topic divider */
+[class^=sectionDivider_], /*channellist divider*/
+[class^=container_]::after, /*channellist divider*/
+[class^=guildSeparator_] /*under dm button*/
+ { display: none; }
+
+[class^=peopleListItem_], /*friends list*/
+[class^=nowPlayingColumn_] [class^=scroller_], /*friends list sidebar*/
+[class^=itemCard_] /*friends list activity cards*/
+ { border: none; }
+
+[class^=divider_][class*=hasContent_] /*chat day separator*/
+ { border: none !important;
+   justify-content: start !important; }
