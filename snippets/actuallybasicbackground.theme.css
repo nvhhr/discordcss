@@ -43,6 +43,7 @@ body { background: center/cover var(--nvbgimg); }
 [class^=channelTextArea_], /*chat input*/
 [class^=channelTextArea_] [class^=scrollableContainer_], /*chat input again*/
 [class^=chatContent_] > form::before, /*wtf even is this and why, discord?*/
+[class^=chatContent_] > form::after, /*weird thing in scrollbar*/
 [data-list-id="chat-messages"] > [class^=wrapper_], /*skeleton before messages are loaded*/
 [data-list-id="chat-messages"] > [class^=wrapper_] > [class^=wrapper_], /*skeleton has many bones in it*/
 [class^=privateChannels_], /*DM list*/
@@ -54,7 +55,7 @@ body { background: center/cover var(--nvbgimg); }
 [class^=nowPlayingColumn_], /* friends list right sidebar*/
 [class^=nowPlayingColumn_] > [class^=container_], /*yeah*/
 [class^=nowPlayingColumn_] [class^=body_], /*activities have..*/
-[class^=nowPlayingColumn_] [class^=section_] /*..a double background too*/
+[class^=nowPlayingColumn_] [class^=section_], /*..a double background too*/
 [class^=itemCard_], /*friends list activity cards*/
 [class^=shop_], /*shop tab content*/
 [class^=shop_] > section, /*shop top bar*/
