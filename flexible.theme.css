@@ -1,0 +1,295 @@
+/**
+ * @name flexible
+ * @author nvhhr
+ * @description 🌹
+*/
+
+/* this theme is made of a bunch of separate components, check them out */
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/nocaption.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/actuallybasicbackground.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/bordercleanup.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/fontreplace.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/shadows.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/lowercaser.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/dashless-extended.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/modalsettings.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/squareicons.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/randomfixes.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/betterusertags.theme.css");
+
+/*
+all colors I use are defined as oklch() because it is the best color format
+reference:     https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch
+color picker:  https://oklch.com/
+details:       https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl
+*/
+
+/* COLOR SETTINGS FOR DARKMODE */
+.theme-dark
+ { --nvl: .7; /* accent color lightness [0 - 1] // 1 is always full white, anything less will keep desired saturation */
+   --nvc: .1; /* chroma (saturation) [0 - .4] */
+   --nvh: 340; /* hue [0 - 360] // note that oklch hues are not quite the same as hsl*/
+   --nvaccent: oklch(var(--nvl) var(--nvc) var(--nvh)); /* combined */
+   --nvbgimg: url(https://i.imgur.com/wUCVTBh.jpg);
+   --nvbgadjust: oklch(.07 .1 var(--nvh) /.7); /* extra layer on top of bg image to improve clarity */
+
+   --nvtextshadow: .15em .15em .25em oklch(0 0 0 /.3);
+   --nvimageshadow: 2px 2px 2px oklch(0 0 0 /.5);
+   --text-normal: oklch(1 0 0 /.9);
+   --interactive-normal: oklch(.9 0 var(--nvh) /.6);
+   --interactive-muted: oklch(.6 0 0);
+   --interactive-active: oklch(1 0 0);
+   --channels-default: oklch(.8 0 0);
+   --background-mentioned: oklch(.1 0 0);
+   --scrollbar-thin-thumb: oklch(1 0 0 /.15);
+   --scrollbar-auto-thumb: oklch(1 0 0 /.2); }
+
+/* COLOR SETTINGS FOR LIGHTMODE */
+.theme-light
+{ --nvl: .1; /* accent color lightness, 0 - 1 */
+  --nvc: .1; /* chroma (saturation), 0 - .4 */
+  --nvh: 340;  /* hue [0 - 360] // note that oklch hues are not quite the same as hsl*/
+  --nvaccent: oklch(var(--nvl) var(--nvc) var(--nvh)); /* combined */
+  --text-normal: oklch(0 0 0 /.9); /* main/global text color */
+
+  --nvbgimg: url(https://i.imgur.com/wUCVTBh.jpg);
+  --nvbgadjust: oklch(.99 .04 var(--nvh) /.8); /* extra layer on top of bg image to improve clarity */
+  --nvtextshadow: .1em .1em .15em oklch(0 0 0 /.3);
+  --nvimageshadow: 2px 2px 2px oklch(0 0 0 /.5);
+  --text-normal: oklch(0 0 0 /.9); /* main/global text color */
+  --interactive-normal: oklch(.1 0 var(--nvh) /.6);
+  --interactive-muted: oklch(.3 0 0);
+  --interactive-active: oklch(0 0 0);
+  --channels-default: oklch(.1 0 0);
+  --background-mentioned: oklch(.1 0 0);
+  --scrollbar-thin-thumb: oklch(0 0 0 /.15);
+  --scrollbar-auto-thumb: oklch(0 0 0 /.2); }
+
+/* change these if you want to */
+:root
+ { /* we want to use our custom accent color on these */
+   --brand-experiment: var(--nvaccent);
+   --background-modifier-accent: var(--nvaccent);
+   --info-warning-foreground: var(--nvaccent);
+   --text-link: var(--nvaccent);
+   --switch-color: var(--nvaccent);
+
+/* other variables */
+   --scrollbar-thin-track: transparent;
+   --scrollbar-auto-track: transparent;
+/* fonts */
+   --font-primary: "roboto mono";
+   --font-display: "roboto mono";
+   --font-headline: "roboto mono";
+   --font-code: "roboto mono";
+   --nvfontsize: 12px;
+/* some size and position vars for convenience */
+   --nviconradius: 2px; /* corner roundness of avatars and server icons */
+   --nvavatarsize: 48px;
+   --custom-emoji-size-jumbo-emoji: 64px;
+   --custom-category-channel-space-before-category: 1em; }
+[class^=panels_] /* userpanel mute/deaf enabled color*/
+ { --status-danger: var(--nvaccent); }
+
+/* have to force divider color specifically,
+   this sets color for new message and day separators */
+[class^=divider_] 
+ { --divider-color: var(--nvaccent);
+   --text-muted: var(--nvaccent); }
+[class^=divider_] > [class^=content_]
+ { background: none; }
+
+/* IMPORTS AND VARIABLES END */
+
+
+
+/* remove a bunch of stuff */
+[aria-label="Send a gift"], /*send gift button*/
+[class^=sidebar_] [class^=headerChildren_], /*server dropdown arrow*/
+[aria-label="Create Invite"], /*invite button on channel list*/
+[aria-label="Invite to Server"], /*invite button on channel list*/
+.vc-typing-indicator-dots, /*typingindicator in channel list*/
+[class^=typingDots_] > svg, /*typingindicator on bottom*/
+.vc-membercount-online-dot,
+.vc-membercount-total-dot, /*membercount dots*/
+.vc-trans-accessory svg, /* translate plugin icon */
+[class^=toolbar_] [href="https://support.discord.com"], /* support in toolbar */
+[class^=toolbar_] [aria-label="Notification Settings"],
+[class*=threadSuggestionBar_], /* 3 replies suggest making a thread */
+[class*=hasThread_]::after /*line in message going into thread preview*/
+ { display: none !important; }
+.vc-membercount-total::before /*add a slash im place of replaced dots*/
+ { content: "/";
+   margin: 0 1ch; }
+
+/*add some space at bottom of scrollers such as chat*/
+[class^=scrollerSpacer_]
+ { height: 50px; }
+
+/*style selected text*/
+::selection
+ { color: oklch(0 0 0) !important;
+   background: oklch(.99 .25 var(--nvh)) !important;
+   text-shadow: none !important; }
+/*strikethrough text*/
+s
+ { text-decoration: wavy line-through oklch(.7 .2 var(--nvh) /.5) .25em; }
+
+/*pulse active channels*/
+@keyframes pulse{0% {opacity:1} 100% {opacity:.5}}
+[class^=containerDefault_]:has([class^=dots_]) /*channellist*/
+ { animation: linear .4s infinite alternate pulse; }
+
+/* reduce userpanel height */
+[class^=sidebar_] [class^=panels] > [class^=container]
+ { height: auto; }
+
+/*unread/jump to bottom bar*/
+[class*=barBase_]
+ { width: fit-content !important;
+   margin-left: auto !important; 
+   background: oklch(.5 0 0 /.2) !important;
+   backdrop-filter: blur(20px);
+   border-radius: 8px !important;
+   padding: 5px !important;
+   height: auto !important; }
+
+/*chat input*/
+[class^=chatContent_] > [class^=form_]
+ { display: flex;
+   flex-direction: column; }
+[class^=channelTextArea_]
+ { margin: 1em 0 0 !important;
+   order: 2 !important; }
+[class^=attachButton_]
+ { padding: 0 !important;
+   margin-right: 2ch !important; }
+/* users typing bottom thing*/
+[class^=typing_]
+ { position: absolute;
+   bottom: unset !important;
+   top: -2.2em;
+   padding: 4px 10px !important;
+   background: oklch(0 0 0 /.3) !important;
+   backdrop-filter: blur(20px) !important;
+   border-radius: 5px !important;
+   width: fit-content !important;
+   margin:auto !important;
+   font-weight: normal !important; }
+[class^=typing_] strong
+ { font-size: 1rem !important;
+   gap: 0 !important;
+   margin: 0 1ch 0 0 !important; }
+[class^=typing_] span
+ { gap: 0 !important; }
+[class^=typing_] strong
+ { margin: 0 1ch 0 1.25ch !important; }
+[class^=typing_] strong:nth-last-of-type(3)
+ { margin-right: 0ch !important; }
+[class^=typing_] strong > div
+ { margin: 0 .5ch 0 .5ch }
+
+/* message styling */
+[class*=cozyMessage_]
+{ display: inline-block;
+  box-sizing: border-box;
+  max-width: 100%;
+  background: linear-gradient(oklch(.35 0 0 /.2), oklch(0 0 0 /.2)) !important;
+  border-radius: 3px 8px 8px !important;
+  backdrop-filter: blur(20px);
+  box-shadow: inset -3px -5px 6px -4px oklch(0 0 0 /.5), inset 1px 2px 4px -1px oklch(1 0 0 /.1), 7px 7px 7px -5px oklch(0 0 0 /.3) !important; }
+[class*=messageListItem_][data-is-self=true] [class*=cozyMessage_]
+{ background: linear-gradient(oklch(.8 .14 var(--nvh) /.2), oklch(.3 .1 var(--nvh) /.2)) !important;
+  box-shadow: inset -3px -5px 6px -4px oklch(0 0 0 /.5), inset 0 0 3px 0px oklch(.8 .14 var(--nvh) /.7), 5px 5px 5px oklch(0 0 0 /.5) !important; }
+[class*=mentioned_]::before
+{ display: none !important; }
+[class*=mentioned_]
+{ box-shadow: inset -3px -5px 6px -4px oklch(0 0 0 /.5), inset 0 0 5px oklch(.9 .1 var(--nvh) /1), 5px 5px 5px oklch(0 0 0 /.5) !important; }
+[class*=groupStart_]
+{ padding: 10px 50px 14px calc(var(--nvavatarsize) + 40px) !important;
+  margin: 8px 0 0 10px !important; }
+[class*=cozyMessage_]:not([class*=groupStart_]):not([class*=isSystemMessage_])
+{ padding: 10px 50px 10px 25px !important;
+  margin: 1px 0 0 calc(var(--nvavatarsize) + 25px) !important;
+  border-radius: 0 8px 8px !important; }
+[class*=isSystemMessage_]
+{ padding: 10px 20px 14px 100px !important;
+  margin: 8px 0 0 10px !important; }
+.messagelogger-deleted
+{ filter: none !important;
+  background: none !important; }
+.messagelogger-deleted > [class*=cozyMessage_],
+.messagelogger-deleted[data-is-self=true] [class*=cozyMessage_]
+{ background: oklch(.3 .4 0 /.2) !important; }
+.messagelogger-edited
+{ background: oklch(.8 .2 70 /.1) !important;
+  padding: 5px 10px;
+  margin-left: -10px;
+  border-radius: 8px; }
+.messagelogger-deleted :is(
+  video,
+  .emoji,
+  [data-type=sticker],
+  iframe,
+  .messagelogger-deleted-attachment,
+  [class|=inlineMediaEmbed])
+   { filter: none !important;
+     transition: none; }
+[class^=contents_] > [class^=avatar_]
+ { margin-top: 0; }
+[class^=contents_] > [class^=avatarDecoration_]
+{ margin-top: -4px; }
+/* message header styling */
+[class*=cozyMessage_] [class^=header_]
+ { margin: 0 0 1em;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: baseline; }
+[class*=cozyMessage_] [class^=header_] [class^=timestamp_]
+ { font-size: unset;
+   order: -1;
+   margin: 0 1ch 0 0;
+   color: var(--nvaccent); }
+/* move replied message below header and restyle */
+[class^=repliedMessage_]
+{ position: relative;
+  top: 2.2em;
+  font-style: italic; }
+[class^=repliedMessage_]::before
+ { border: none; }
+[class^=repliedMessage_] + [class^=contents_] > [class^=header_]
+ { top: -20px; }
+[class*=hasReply_] > [class^=contents_] > [class^=avatar_]
+ { margin-top: -20px !important; }
+[class*=hasReply_] [class^=avatarDecoration_]
+ { margin-top: calc(-20px - 4px); } /*accounting for size diff of 40px avatar and 48px decoration*/
+[class^=repliedMessage_] [class^=username_]
+ { opacity: 1; }
+[class^=repliedMessage_] [class^=username_]::after
+ { content: ":";
+   margin: 0;
+   padding: 0;
+   color: var(--text-normal); }
+[class*=timestampVisibleOnHover_]
+ { margin-left: -70px !important;
+   opacity: 1 !important; }
+
+/*codeblocks*/
+CODE.inline
+ { padding: 1px 5px !important;
+   box-shadow: inset 0 0 1px 1px oklch(1 0 0 /.1) !important;
+   border-radius: 2px !important;
+   font-size: 100% !important;
+   line-height: 1.5em !important;
+   background: rgb(35 33 54) !important; /*rose pine moon */
+   color: rgb(196 167 231) !important; } /*rose pine moon */
+CODE TD:first-child /*linenumber*/
+ { background: oklch(0 0 0 /.2) !important;
+   padding: .4em 1ch 0 1ch !important; }
+[class^=markup_] pre /*fix unnecessary wrap that may happen*/
+ { max-width: 100% !important; }
+[class^=codeContainer_],
+.shiki-container
+ { width: fit-content; }
+CODE [style*="font-style: italic;"] /* no italic css selectors on rose pine moon*/
+ { font-style: normal !important; }
