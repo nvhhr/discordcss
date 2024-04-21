@@ -4,20 +4,29 @@
  * @description override fonts and fontsize
 */
 
-:root
- { /* these are the default fonts, just rplace the whole thing with whatever you want
-      for an example, --font-primary: "comic sans ms"; */
-   /* main font */
-   --font-primary: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-   /* channellist categories and some other places */
-   --font-display: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-   /* headlines, big texts like like in the nitro settings */
-   --font-headline: 'ABC Ginto Nord', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-   /* code blocks */
-   --font-code: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
-   /* font size override, because sometimes changing it in discord settings isn't ideal */
-   --nvfontsize: 12px; }
+/*
+If you want to use an online font instead of one installed locally on your system, you have to import it.
+Best way is to use google fonts. Press 'get font' > 'get embed code' > import and replace this line with your font.
+The imported CSS contains a whole bunch of @font-face rules that map all available variants of the fonts so all font-weights and styles are properly applied.
+*/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* these are the default fonts as of april 2024:
+   --font-primary: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   --font-display: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   --font-headline: 'ABC Ginto Nord', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   --font-code: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+*/
+
+:root
+ { --font-primary: "Roboto Mono"; /* main font */
+   --font-display: "Roboto Mono"; /* channellist categories and some other places */
+   --font-headline: "Roboto Mono"; /* headlines, big texts like like in the nitro settings */
+   --font-code: "Roboto Mono"; /* code blocks */
+   --nvfontsize: 12px; } /* font size override, because sometimes changing it in discord settings isn't ideal */
+
+/* we want to force the fontsize for a bunch of elements */
 html,
 [class*="heading-md-semibold"],
 [class*=text],
