@@ -21,4 +21,4 @@ Grab the "raw" links to the files (main theme: https://raw.githubusercontent.com
 Alternatively, download the file and put it in your theme folder or copypaste it into your quickCSS.  
 That way you'll be able to make any changes locally, and I won't be able to break your stuff while this is still evolving.
 
-Theme should work mostly fine on other client mods also, but the imports in the theme might not work (because I'm not using github.io), so you might have to add in the snippet components as extra themes. This may change in the future.
+Theme should work mostly fine on other client mods also, but the imports in the theme might not work (because I'm not using github.io, raw links are served text/plain when .io links are text/css), so you might have to add in the snippet components as extra themes. This may change in the future.
