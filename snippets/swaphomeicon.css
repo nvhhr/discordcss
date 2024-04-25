@@ -1,0 +1,16 @@
+/**
+ * @name swaphomeicon
+ * @author nvhhr
+ * @description replace home icon/dm button with custom image
+*/
+
+/*remove discord logo*/
+[data-list-item-id=guildsnav___home] > [class^=childWrapper_] > svg
+ { display: none; }
+
+/*replace with custom image*/
+[data-list-item-id=guildsnav___home] > [class^=childWrapper_]
+ { background-image: url("https://i.imgur.com/ekIk6Ux.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 70% 70%; /*adjust as you see fit*/ }
