@@ -21,7 +21,7 @@ Forces certain texts to lowercase, because lowercase is cuter.
 **modalsettings:**  
 Settings and some other dialogs like audit log show up as a modal window.
 
-**nocaption**  
+**nocaption:**  
 Remove titlebar.
 
 **randomfixes:**  
