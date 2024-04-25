@@ -4,6 +4,18 @@
  * @description remove caption / titlebar (+ tweaks)
 */
 
+:root
+ { --captionbuttonwidth: 80px; }
+/*main titlebar element moved and adjusted to create drag area*/
+[class^=typeWindows_]
+ { position: fixed;
+   height: 15px;
+   width: var(--captionbuttonwidth);
+   top: 30px;
+   right: 5px;
+   margin: 0;
+   background: repeating-linear-gradient(315deg, oklch(1 1 1 /.02), oklch(0 0 0 /.1) 3px, oklch(1 1 1 /0.02) 6px);
+   border-radius: 5px; }
 /*remove window title*/
 [class^=wordmarkWindows_]
  { display: none; }
@@ -12,30 +24,28 @@
  { height: 30px;
    top: -30px;
    right: -5px; }
+/*we want this one a bit bigger*/
 [class^=winButtonClose_]
  { padding: 0 6px; }
-/*create drag area*/
-[class^=typeWindows_]
- { height: 15px;
-   top: 30px;
-   margin: 0;
-   position:fixed;
-   right: 5px;
-   width: 80px;
-   background: repeating-linear-gradient(315deg, transparent, oklch(0 0 0 /.1) 3px, transparent 6px);
-   border-radius: 5px; }
+
 /*make space for captionbuttons*/
 [class^=chat_]:not([class*=threadSidebarOpen_]) > [class^=subtitleContainer_],
-[class*=threadSidebarOpen_] ~ [class^=container_] > [class^=container_]
- { width: calc(100% - 80px); }
-/*fix search*/
+[class*=threadSidebarOpen_] ~ [class^=container_] > [class^=container_],
+[class^=notice_]
+ { width: calc(100% - var(--captionbuttonwidth)); }
+[class^=notice_]
+ { padding: 0;
+   border-radius: 0;
+   box-shadow: none; }
+
+/*improved search*/
 [class^=toolbar_] > [class^=search_] > :not([class*=open_]) > [class^=searchBar_]
  { width: 25px;
    background: transparent; }
 [class^=toolbar_] > [class^=search_]
  { margin: 0;
    order: -1; }
-/*toolbarbuttons*/
+/*other toolbarbuttons*/
 [class^=toolbar_] > *
  { margin: 0 2px !important; }
 [class^=children_] > [class^= iconWrapper_]
