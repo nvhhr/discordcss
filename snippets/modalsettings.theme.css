@@ -6,7 +6,7 @@
 
 [class^=standardSidebarView_]
  { top: 0 !important; }
-[class^=layer_] + [class^=layer_]:has( > [class^=standardSidebarView_])
+[class^=layer_] + [class^=layer_]:has([class^=standardSidebarView_])
  { border-radius: var(--radius-md);
    box-shadow: var(--shadow-high);
    border: 1px solid var(--border-strong);
