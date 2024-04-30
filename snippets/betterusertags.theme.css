@@ -4,21 +4,23 @@
  * @description better bot/staff tags and newleaf replacement
 */
 
-/*bot/usertags*/
-[class^=botTagCompact_], /*we don't want these in reply previews*/
-[class^=newMemberBadge_] /*let's replace newleaf icon*/
+[class^=botTagCompact_], /*remove tags in reply previews*/
+[class^=newMemberBadge_] /*remove newleaf icon*/
  { display: none; }
-[id^=message-username-]:has([class^=newMemberBadge_])::after,
+
+/*restyle tags*/
 [class*=botTag_]:not([class^=nitroBadge])
+[id^=message-username-]:has([class^=newMemberBadge_])::after,
  { color: black;
-   font: bold italic calc(var(--nvfontsize) * .8) var(--font-primary);
-   text-transform: uppercase;
-   text-shadow: none;
+   font: bold .8em var(--font-primary);
    margin-left: 1ch;
-   padding: 1px 1ch 0;
+   padding: .15em 1ch;
    border-radius: 1em;
    height: 1rem; }
+[class*=botText_]
+ { font-weight: inherit; }
+
+/*create tag in place of newleaf*/
 [id^=message-username-]:has([class^=newMemberBadge_])::after
- { content: "new";
-   background: oklch(.8 .1 160);
-   padding: 0 1ch !important; }
+ { content: "NEW";
+   background: oklch(.8 .1 160); }
