@@ -9,8 +9,8 @@
  { display: none; }
 
 /*restyle tags*/
-[class*=botTag_]:not([class^=nitroBadge])
-[id^=message-username-]:has([class^=newMemberBadge_])::after,
+[class*=botTag_]:not([class^=nitroBadge]),
+[id^=message-username-]:has([class^=newMemberBadge_])::after
  { color: black;
    font: bold .8em var(--font-primary);
    margin-left: 1ch;
