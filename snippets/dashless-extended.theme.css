@@ -15,7 +15,10 @@
    src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");
    unicode-range: U+002D; /* the "-" character */
    font-display: swap;
-   size-adjust: 100%; } /*adjust this to change word spacing if you use another primary font/fontsize*/
+   size-adjust: 100%; } /*you can adjust this to change word spacing if you use another primary font/fontsize*/
+/* to keep this theme in online themes or an @import and adjust the spacing,
+   you must copy the whole font-face block to quickcss and edit it there,
+   unfortunately css variables aren't supported inside font-face */
 
 /* apply this hack to all the following */
 [data-list-item-id^=channels___]:not([role=button]), /* channel list */
