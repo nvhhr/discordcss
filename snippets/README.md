@@ -7,6 +7,12 @@ Recommended way to customize the variables is to use the snippets in Vencord onl
 
 **[actuallybasicbackground:](actuallybasicbackground.theme.css)**  
 A pretty simple but highly targeted style to set a background image at the bottom and clear out backgrounds from certain elements in front.
+<details> <summary>screenshot before</summary>
+<img src="https://github.com/nvhhr/discordcss/assets/34724502/6d7c13e6-cabb-4329-88cc-d08c373a9e7d">
+</details>
+<details> <summary>screenshot after</summary>
+<img src="https://github.com/nvhhr/discordcss/assets/34724502/f146b328-ddd5-48c2-ada9-6daeb2713f86">
+</details>
 
 **[betterusertags:](betterusertags.theme.css)**  
 Nicer bot/staff tags + new user leaf replaced to match.
