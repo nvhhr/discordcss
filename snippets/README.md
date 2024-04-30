@@ -27,7 +27,7 @@ Replaces all dashes (-) in channel names with a font with a blank glyph, and rep
 **[fontreplace:](fontreplace.theme.css)**  
 Simple font replacer.
 <details> <summary>screenshot</summary>
-<img src="https://github.com/nvhhr/discordcss/assets/34724502/34724502/6fab5f33-abd3-48fe-82dd-0de8f852438f">
+<img src="https://github.com/nvhhr/discordcss/assets/34724502/6fab5f33-abd3-48fe-82dd-0de8f852438f">
 </details>
 
 **[lowercaser:](lowercaser.theme.css)**  
