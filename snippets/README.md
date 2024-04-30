@@ -20,6 +20,9 @@ Mostly intended for use with actuallybasicbackground but wanted to make it separ
 
 **[dashless-extended:](dashless-extended.theme.css)**  
 Replaces all dashes (-) in channel names with a font with a blank glyph, and replaces all flag emojis with Twemoji-Mozilla font (because Windows mostly).
+<details> <summary>screenshot</summary>
+<img src="https://github.com/nvhhr/discordcss/assets/34724502/da4ddde8-1f46-4185-91b3-0a29b2b9749d">
+</details>
 
 **[fontreplace:](fontreplace.theme.css)**  
 Simple font replacer.
