@@ -5,6 +5,9 @@ A pretty simple and very specific style to set a background image at the bottom 
 
 **[betterusertags:](betterusertags.theme.css)**  
 Nicer bot/staff tags + new user leaf replaced to match.
+<details> <summary>screenshot</summary>
+<img src="https://github.com/nvhhr/discordcss/assets/34724502/d0573ef8-8ed3-43cf-955b-7d5aa4bfa715">
+</details>
 
 **[bordercleanup:](bordercleanup.theme.css)**  
 Clear out unnecessary borders and separators.
