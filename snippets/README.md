@@ -7,16 +7,16 @@ Recommended way to customize the variables is to use the snippets in Vencord onl
 
 **[actuallybasicbackground:](actuallybasicbackground.theme.css)**  
 A pretty simple but highly targeted style to set a background image at the bottom and clear out backgrounds from certain elements in front.
-<details> <summary>screenshot before</summary>
+<details> <summary>:sunrise_over_mountains:screenshot before</summary>
 <img src="https://github.com/nvhhr/discordcss/assets/34724502/6d7c13e6-cabb-4329-88cc-d08c373a9e7d">
 </details>
-<details> <summary>screenshot after</summary>
+<details> <summary>:sunrise_over_mountains:screenshot after</summary>
 <img src="https://github.com/nvhhr/discordcss/assets/34724502/f146b328-ddd5-48c2-ada9-6daeb2713f86">
 </details>
 
 **[betterusertags:](betterusertags.theme.css)**  
 Nicer bot/staff tags + new user leaf replaced to match.
-<details> <summary>screenshot</summary>
+<details> <summary>:sunrise_over_mountains:screenshot</summary>
 <img src="https://github.com/nvhhr/discordcss/assets/34724502/d0573ef8-8ed3-43cf-955b-7d5aa4bfa715">
 </details>
 
@@ -26,13 +26,13 @@ Mostly intended for use with actuallybasicbackground but wanted to make it separ
 
 **[dashless-extended:](dashless-extended.theme.css)**  
 Replaces all dashes (-) in channel names with a font with a blank glyph, and replaces all flag emojis with Twemoji-Mozilla font (because Windows mostly).
-<details> <summary>screenshot</summary>
+<details> <summary>:sunrise_over_mountains:screenshot</summary>
 <img src="https://github.com/nvhhr/discordcss/assets/34724502/da4ddde8-1f46-4185-91b3-0a29b2b9749d">
 </details>
 
 **[fontreplace:](fontreplace.theme.css)**  
 Change font and fontsize.
-<details> <summary>screenshot</summary>
+<details> <summary>:sunrise_over_mountains:screenshot</summary>
 <img src="https://github.com/nvhhr/discordcss/assets/34724502/6fab5f33-abd3-48fe-82dd-0de8f852438f">
 </details>
 
@@ -59,7 +59,7 @@ Reduces border-radii of avatars and servericons.
 
 **[swaphomeicon:](swaphomeicon.theme.css)**  
 Replace home icon/DM button with custom image.
-<details> <summary>screenshot</summary>
+<details> <summary>:sunrise_over_mountains:screenshot</summary>
 <img src="https://github.com/nvhhr/discordcss/assets/34724502/95f6fa66-ab6b-40ed-b368-bd09970be277">
 </details>
 
@@ -84,7 +84,6 @@ https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/squareicons.the
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/swaphomeicon.theme.css
 ```
 </details>
-
 <details>
 <summary>imports (for inserting to css)</summary>
 
