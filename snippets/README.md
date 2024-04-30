@@ -46,6 +46,7 @@ Replace home icon/DM button with custom image.
 ### Copypaste helper :D
 <details>
 <summary>Just the links (for vencord online themes)</summary>
+
 ```
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/actuallybasicbackground.theme.css
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/betterusertags.theme.css
@@ -65,6 +66,7 @@ https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/swaphomeicon.th
 
 <details>
 <summary>imports (for inserting to css)</summary>
+
 ```css
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/actuallybasicbackground.theme.css");
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/betterusertags.theme.css");
