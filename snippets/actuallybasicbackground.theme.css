@@ -6,15 +6,17 @@
 
 /*customize these*/
 :root
- { --nvbgimg: url("link.goes/here");
-   --nvbgadjust: rgb(0 0 0 / 0); } /*use this to tone the bg*/
+ { --nvbgimg: url("https://w.wallhaven.cc/full/85/wallhaven-851q5o.jpg");
+   --nvbgadjust: rgb(0 0 0 / .6); /*use this to tone the bg for better visibility*/
+   --scrollbar-thin-track: transparent;
+   --scrollbar-auto-track: transparent; } 
 
 /*we'll set the background image at the very bottom*/
 body { background: center/cover var(--nvbgimg); }
-/*adding the extra toning layer on top for better visibility*/
+/*add the toning layer..*/
 #app-mount { background: var(--nvbgadjust); }
 
-/*then we clear out backgrounds from a bunch of elements...*/
+/*then we clear out backgrounds from a bunch of elements*/
 [class^=app_], /*main app bg*/
 [class^=bg__], /*another bg layer*/
 [class*=guilds_], /*serverlist*/
