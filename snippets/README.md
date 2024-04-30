@@ -1,7 +1,12 @@
 ### Collection of pretty simple css snippets, some having variables to modify.
+I try to make the snippets work through discord updates and with any themes to some extent.  
+You can hit me up on Vencord theme dev channel, or post issues or contributions here if you desire.  
+Screenshots may not be exactly what you will see (depending on many factors) or may be slightly out of date.  
+Recommended way to customize the variables is to use the snippets in Vencord online themes or imports, and adding the variables into quickcss and modifying them there.  
+**The snippets are still in active development and I reserve the right to make breaking changes.**
 
 **[actuallybasicbackground:](actuallybasicbackground.theme.css)**  
-A pretty simple and very specific style to set a background image at the bottom and clear out backgrounds from elements in front.
+A pretty simple but highly targeted style to set a background image at the bottom and clear out backgrounds from certain elements in front.
 
 **[betterusertags:](betterusertags.theme.css)**  
 Nicer bot/staff tags + new user leaf replaced to match.
@@ -10,7 +15,8 @@ Nicer bot/staff tags + new user leaf replaced to match.
 </details>
 
 **[bordercleanup:](bordercleanup.theme.css)**  
-Clear out unnecessary borders and separators.
+Clear out unnecessary borders and separators.  
+Mostly intended for use with actuallybasicbackground but wanted to make it separate.
 
 **[dashless-extended:](dashless-extended.theme.css)**  
 Replaces all dashes (-) in channel names with a font with a blank glyph, and replaces all flag emojis with Twemoji-Mozilla font (because Windows mostly).
