@@ -24,24 +24,62 @@ Settings and some other dialogs like audit log show up as a modal window.
 **[nocaption:](nocaption.theme.css)**  
 Remove titlebar.
 
-**randomfixes:**  
+**[randomfixes:](randomfixes.theme.css)**  
 A miscellaneous collection of random fixes that shouldn't be unwanted.
 
-**recute:**  
+**[recute:](recute.theme.css)**  
 Make vencord server cute again (not included with main theme).
 
-**shadows:**  
+**[shadows:](shadows.theme.css)**  
 Add shadows to text and images.
 
-**squareicons:**  
+**[squareicons:](squareicons.theme.css)**  
 Reduces border-radii of avatars and servericons.
 
-**swaphomeicon:**  
+**[swaphomeicon:](swaphomeicon.theme.css)**  
 Replace home icon/DM button with custom image.
-<details>
-<summary>screenshot</summary>
-![homeicon](https://github.com/nvhhr/discordcss/assets/34724502/95f6fa66-ab6b-40ed-b368-bd09970be277)
+<details> <summary>screenshot</summary>
+<img src="https://github.com/nvhhr/discordcss/assets/34724502/95f6fa66-ab6b-40ed-b368-bd09970be277">
 </details>
 
+
+### Copypaste helper :D
+<details>
+<summary>Just the links (for vencord online themes)</summary>
+```
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/actuallybasicbackground.theme.css
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/betterusertags.theme.css
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/bordercleanup.theme.css
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/dashless-extended.theme.css
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/fontreplace.theme.css
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/lowercaser.theme.css
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/modalsettings.theme.css
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/nocaption.theme.css
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/randomfixes.theme.css
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/recute.theme.css
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/shadows.theme.css
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/squareicons.theme.css
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/swaphomeicon.theme.css
+```
+</details>
+
+<details>
+<summary>imports (for inserting to css)</summary>
+```CSS
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/actuallybasicbackground.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/betterusertags.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/bordercleanup.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/dashless-extended.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/fontreplace.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/lowercaser.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/modalsettings.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/nocaption.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/randomfixes.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/recute.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/shadows.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/squareicons.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/swaphomeicon.theme.css");
+```
+</details>
 
 
