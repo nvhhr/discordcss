@@ -65,7 +65,7 @@ https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/swaphomeicon.th
 
 <details>
 <summary>imports (for inserting to css)</summary>
-```CSS
+```css
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/actuallybasicbackground.theme.css");
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/betterusertags.theme.css");
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/bordercleanup.theme.css");
