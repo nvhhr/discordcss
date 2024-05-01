@@ -46,7 +46,7 @@ Settings and some other dialogs like audit log show up as a modal window.
 </details>
 
 **[namebrightener:](namebrightener.theme.css)**  
-Many users have unreadable dark usernames, janky fix for that
+Many users have unreadable dark usernames, janky fix for that.
 <details> <summary>:sunrise_over_mountains:more info and screenshot</summary>
 
 This will alter the colors for everyone a bit by trying to achieve a somewhat uniform contrast and brightening a bit, then resaturating, maybe dialing in the values produces nicer results but it also depends on the theme/monitor/eyes you might have.  
@@ -65,7 +65,7 @@ Remove titlebar, adjust toolbar a bit and create a drag area under window button
 A miscellaneous collection of random fixes that shouldn't be unwanted.
 
 **[recute:](recute.theme.css)**  
-Make vencord server cute again (not included with main theme).
+Make vencord server cute again.
 
 **[shadows:](shadows.theme.css)**  
 Add shadows to text and images.
@@ -121,5 +121,3 @@ https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/swaphomeicon.th
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/swaphomeicon.theme.css");
 ```
 </details>
-
-
