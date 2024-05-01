@@ -45,6 +45,16 @@ Settings and some other dialogs like audit log show up as a modal window.
 <img src="https://github.com/nvhhr/discordcss/assets/34724502/46aa8ab9-4789-4ba2-bed5-042a6ec7a06f">
 </details>
 
+**[namebrightener:](namebrightener.theme.css)**  
+Many users have unreadable dark usernames, janky fix for that
+<details> <summary>:sunrise_over_mountains:more info and screenshot</summary>
+
+This will alter the colors for everyone a bit by trying to achieve a somewhat uniform contrast and brightening a bit, then resaturating, maybe dialing in the values produces nicer results but it also depends on the theme/monitor/eyes you might have.  
+Maybe some day `currentColor` works with relative colors like `hsl(from currentColor h s 50%)` or with `color-mix()` and this can be done proper.  
+
+<img src="https://github.com/nvhhr/discordcss/assets/34724502/693b3827-85f3-4b3e-8405-fd24bd1428eb">
+</details>
+
 **[nocaption:](nocaption.theme.css)**  
 Remove titlebar, adjust toolbar a bit and create a drag area under window buttons.
 <details> <summary>:sunrise_over_mountains:screenshot</summary>
