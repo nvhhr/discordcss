@@ -41,9 +41,15 @@ Forces certain texts to lowercase, because lowercase is cuter.
 
 **[modalsettings:](modalsettings.theme.css)**  
 Settings and some other dialogs like audit log show up as a modal window.
+<details> <summary>:sunrise_over_mountains:screenshot</summary>
+<img src="https://github.com/nvhhr/discordcss/assets/34724502/46aa8ab9-4789-4ba2-bed5-042a6ec7a06f">
+</details>
 
 **[nocaption:](nocaption.theme.css)**  
-Remove titlebar.
+Remove titlebar, adjust toolbar a bit and create a drag area under window buttons.
+<details> <summary>:sunrise_over_mountains:screenshot</summary>
+<img src="https://github.com/nvhhr/discordcss/assets/34724502/fc8ed5f0-4d3d-410e-8a52-725b61512ab5">
+</details>
 
 **[randomfixes:](randomfixes.theme.css)**  
 A miscellaneous collection of random fixes that shouldn't be unwanted.
