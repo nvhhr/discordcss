@@ -1,11 +1,11 @@
 /**
  * @name squareicons
  * @author nvhhr
- * @description reduce border-radii
+ * @description square avatar/servericons
 */
 
 :root
- { --nviconradius: 2px; }
+ { --nviconradius: 5%; } /*percentage works best*/
 
 [class*=avatar_],
 [class^=replyAvatar_],
