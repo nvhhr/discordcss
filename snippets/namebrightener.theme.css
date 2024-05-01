@@ -1,0 +1,10 @@
+/**
+ * @name namebrightener
+ * @author nvhhr
+ * @description brightens usernames to make them readable
+*/
+
+[class*=username_][style],
+.mention[style],
+[class*=membersGroup_] [style]
+ { filter:contrast(.2) brightness(1.2) saturate(500%); }
