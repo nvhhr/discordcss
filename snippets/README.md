@@ -92,6 +92,7 @@ https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/dashless-extend
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/fontreplace.theme.css
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/lowercaser.theme.css
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/modalsettings.theme.css
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/namebrightener.theme.css
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/nocaption.theme.css
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/randomfixes.theme.css
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/recute.theme.css
@@ -111,6 +112,7 @@ https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/swaphomeicon.th
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/fontreplace.theme.css");
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/lowercaser.theme.css");
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/modalsettings.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/namebrightener.theme.css");
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/nocaption.theme.css");
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/randomfixes.theme.css");
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/recute.theme.css");
