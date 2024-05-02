@@ -61,6 +61,9 @@ Remove titlebar, adjust toolbar a bit and create a drag area under window button
 <img src="https://github.com/nvhhr/discordcss/assets/34724502/fc8ed5f0-4d3d-410e-8a52-725b61512ab5">
 </details>
 
+**[pingedserversfirst:](pingedserversfirst.theme.css)**
+Move pinged servers and folders to top of serverlist and containing folder.
+
 **[randomfixes:](randomfixes.theme.css)**  
 A miscellaneous collection of random fixes that shouldn't be unwanted.
 
@@ -94,6 +97,7 @@ https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/lowercaser.them
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/modalsettings.theme.css
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/namebrightener.theme.css
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/nocaption.theme.css
+https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/pingedserversfirst.theme.css
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/randomfixes.theme.css
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/recute.theme.css
 https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/shadows.theme.css
@@ -114,6 +118,7 @@ https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/swaphomeicon.th
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/modalsettings.theme.css");
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/namebrightener.theme.css");
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/nocaption.theme.css");
+@import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/pingedserversfirst.theme.css");
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/randomfixes.theme.css");
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/recute.theme.css");
 @import url("https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/shadows.theme.css");
