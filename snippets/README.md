@@ -1,8 +1,8 @@
 ### Collection of pretty simple css snippets, some having variables to modify.
-I try to make the snippets work through discord updates and with any themes to some extent.  
+I try to make the snippets work through discord updates and with any themes to some extent. I also have many comments and stuff inside the css.  
 You can hit me up on Vencord theme dev channel, or post issues or contributions here if you desire.  
 Screenshots may not be exactly what you will see (depending on many factors) or may be slightly out of date.  
-Recommended way to customize the variables is to use the snippets in Vencord online themes or imports, and adding the variables into quickcss and modifying them there.  
+Recommended way to customize the variables in each snippet is to use the snippets in Vencord online themes or imports, and adding the variables into quickcss and modifying them there.  
 **The snippets are still in active development and I reserve the right to make breaking changes.**
 
 **[actuallybasicbackground:](actuallybasicbackground.theme.css)**  
