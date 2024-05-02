@@ -61,7 +61,7 @@ Remove titlebar, adjust toolbar a bit and create a drag area under window button
 <img src="https://github.com/nvhhr/discordcss/assets/34724502/fc8ed5f0-4d3d-410e-8a52-725b61512ab5">
 </details>
 
-**[pingedserversfirst:](pingedserversfirst.theme.css)**
+**[pingedserversfirst:](pingedserversfirst.theme.css)**  
 Move pinged servers and folders to top of serverlist and containing folder.
 
 **[randomfixes:](randomfixes.theme.css)**  
