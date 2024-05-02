@@ -1,0 +1,14 @@
+/**
+ * @name pingedserversfirst
+ * @author nvhhr
+ * @description move pinged servers and folders to top of serverlist
+*/
+
+[data-list-id="guildsnav"] > [class^=scroller_] > [aria-label], /*serverlist*/
+[id^=folder-items-] /*folder*/
+ { display: flex; /*order property needs flex*/
+   flex-direction: column; } /*fix layout*/
+
+/*find servers and folders that have a number badge and force them up*/
+[data-list-id="guildsnav"] > [class^=scroller_] > [aria-label] :is([class^=listItem_],[class^=wrapper_]):has([class^=numberBadge_])
+ { order: -1 }
