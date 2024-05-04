@@ -65,6 +65,7 @@ Remove titlebar, adjust toolbar a bit and create a drag area under window button
 Move pinged servers and folders to top of serverlist and containing folder.
 <details> <summary>:sunrise_over_mountains:screenshot</summary>
 <img src="https://github.com/nvhhr/discordcss/assets/34724502/41fda6ab-88cb-463b-ad73-b68be38a351a">
+</details>
 
 **[randomfixes:](randomfixes.theme.css)**  
 A miscellaneous collection of random fixes that shouldn't be unwanted.
