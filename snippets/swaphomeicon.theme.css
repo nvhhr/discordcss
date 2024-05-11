@@ -4,13 +4,10 @@
  * @description replace home icon/dm button with custom image
 */
 
-/*remove discord logo*/
-[data-list-item-id=guildsnav___home] > [class^=childWrapper_] > svg
- { display: none; }
-
-/*replace with custom image*/
+/* set a background-image on dm button */
 [data-list-item-id=guildsnav___home] > [class^=childWrapper_]
  { background-image: url("https://i.imgur.com/ekIk6Ux.png");
    background-position: center;
    background-repeat: no-repeat;
-   background-size: 70% 70%; /*adjust as you see fit*/ }
+   background-size: 70% 70%; /*adjust as you see fit*/
+   svg { display: none; }} /*remove discord logo from top leaving only background*/
