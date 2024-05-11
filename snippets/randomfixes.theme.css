@@ -42,20 +42,17 @@
  { --xhairwidth: 2px;
    box-shadow: none;
    border-width: 2px;
-   &::before
+   &::before, &::after
     { content: "";
       background-color: oklch(0 0 0 /.001);
       position: absolute;
-      backdrop-filter: invert(1);
+      backdrop-filter: invert(1); }
+   &::before
+    { height: 100%;
       width: var(--xhairwidth);
-      height: 100%;
       left: calc(50% - (var(--xhairwidth)/2)); }
    &::after
-    { content: "";
-      background-color: oklch(0 0 0 /.001);
-      position: absolute;
-      backdrop-filter: invert(1);
-      width: 100%;
+    { width: 100%;
       height: var(--xhairwidth);
       top: calc(50% - (var(--xhairwidth)/2)); }}
 
@@ -67,8 +64,6 @@
 
 /* show usernames in friendlist */
 [class*=discriminator_]
- { visibility: visible; }
-[class*=discriminator_]::before
- { content: "("; }
-[class*=discriminator_]::after
- { content: ")"; }
+ { visibility: visible;
+   &::before { content: "("; }
+   &::after { content: ")"; }}
