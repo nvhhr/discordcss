@@ -5,7 +5,7 @@
 */
 
 [href="/channels/1015060230222131221/1026504914131759104"] [class^=name_],
-[class^=content_]:has([class*=modeSelected_] [href="/channels/1015060230222131221/1026504914131759104"]) :is([class*=heading-md-semibold_], [class^=placeholder_])
+[class^=content_]:has([class*=modeSelected_] [href="/channels/1015060230222131221/1026504914131759104"]) :is([class^=subtitleContainer_] [class*=heading-md-semibold_], [class^=placeholder_])
  { visibility: collapse;
    &::before
     { content: "🌺-cute-people";
