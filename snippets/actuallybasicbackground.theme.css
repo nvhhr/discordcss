@@ -18,7 +18,7 @@ body { background: center/cover var(--nvbgimg); }
 
 /*then we clear out backgrounds from a bunch of elements*/
 [class^=app_], /*main app bg*/
-[class^=bg__], /*another bg layer*/
+[class^=bg_], /*another bg layer*/
 [class*=guilds_], /*serverlist*/
 [class^=sidebar_], /*channellist*/
 [class^=sidebar_] [class^=container_], /*another layer on channellist*/
