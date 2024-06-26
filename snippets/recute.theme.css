@@ -11,7 +11,7 @@
     { content: "🌺-cute-people";
       visibility: visible; }}
 [class^=content_]:has([class*=modeSelected_] [href="/channels/1015060230222131221/1026504914131759104"]) [class^=placeholder_]::before
- { content: "Message #🌺-cute-people"; }
+ { content: "Message #🌺-cute-people" !important; }
 [class^=role_][data-list-item-id$="1026504932959977532"] [class*=roleNameOverflow_]
  { display: none; }
 [class^=role_][data-list-item-id$="1026504932959977532"] [class^=roleName_]::after
