@@ -28,7 +28,7 @@ these are the default fonts as of april 2024:
 
 /* we want to force the fontsize for a bunch of elements */
 html,
-[class*=heading-md-semibold_],
+[class*=heading-md],
 [class*=text],
 [class*=input_],
 [class^=topic_],
