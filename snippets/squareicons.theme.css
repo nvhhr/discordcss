@@ -12,7 +12,8 @@
 [class^=embedAuthorIcon_],
 [class^=wrapperSimple_],
 [class^=folderIconWrapper_],
-[class^=folderIconWrapper_] [class^=icon_]
+[class^=folderIconWrapper_] [class^=icon_],
+[class^=expandedFolderBackground_]
 foreignObject[mask*="url(#"]
  { border-radius: var(--nviconradius) !important; }
 foreignObject[mask*="url(#"]
