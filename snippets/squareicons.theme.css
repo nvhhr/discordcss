@@ -9,12 +9,14 @@
 
 [class*=avatar_],
 [class^=replyAvatar_],
-[class^=embedAuthorIcon_],
-[class^=wrapperSimple_],
+[class^=embedAuthorIcon_], /*for things like github webhook*/
+[class^=wrapperSimple_], /*servericons*/
 [class^=folder_],
 [class^=folderIconWrapper_],
 [class^=folderIconWrapper_] [class^=icon_],
-[class^=expandedFolderBackground_]
+[class^=expandedFolderBackground_],
+[class^=gameIcon_], /*activity icon in channellist*/
+[class^=applicationLargeImage_] /*activity icon in popup*/
 foreignObject[mask*="url(#"]
  { border-radius: var(--nviconradius) !important; }
 foreignObject[mask*="url(#"]
