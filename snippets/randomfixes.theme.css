@@ -4,11 +4,6 @@
  * @description a random collection of small fixes
 */
 
-/* fix scrollbars on newer electron*/
-*
- { scrollbar-width: unset !important;
-   scrollbar-color: unset !important; }
-
 /* fix size/spacing of message header icons */
 .vc-platform-indicator,
 [class^=nitroBadgeSvg_]
@@ -27,11 +22,11 @@
 [class^=avatarDecoration_]
  { transition: .3s opacity; }
 
-/* make profile text scrollable */
+/* make profile text scrollable / need to rewrite for new profile popup
 [class*=lineClamp2Plus_]
  { overflow-y: auto !important; 
   scrollbar-color: oklch(1 0 0 /.3) transparent !important;
-  scrollbar-width: thin !important; }
+  scrollbar-width: thin !important; } */
 
 /* fix numbered lists */
 [class^=markup_] ol
@@ -67,3 +62,10 @@
  { visibility: visible;
    &::before { content: "("; }
    &::after { content: ")"; }}
+
+/* show usernames in channel activity popup */
+[class^=channelActivityContainer_] [class^=avatarContainer_] > div::after
+ { content: attr(aria-label);
+   color: var(--text-normal);
+   position: absolute;
+   margin: 7px; } /*improve this maybe?*/
