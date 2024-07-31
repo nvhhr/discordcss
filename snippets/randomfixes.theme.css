@@ -63,6 +63,9 @@
    &::before { content: "("; }
    &::after { content: ")"; }}
 
+/* show channel activity even when hovered */
+[class^=channelInfo_]
+ { display: block !important; }
 /* show usernames in channel activity popup */
 [class^=channelActivityContainer_] [class^=avatarContainer_] > div::after
  { content: attr(aria-label);
@@ -70,7 +73,7 @@
    position: absolute;
    margin: 7px; } /*improve this maybe?*/
 
-/* clean up gif picker after visual refresh*/
+/* clean up gif picker after visual refresh */
 [class^=categoryFade_]
  { backdrop-filter: none !important; }
 #gif-picker-tab-panel [class^=result_]::after
