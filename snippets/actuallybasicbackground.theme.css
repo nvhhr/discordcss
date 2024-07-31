@@ -12,7 +12,7 @@
    --scrollbar-auto-track: transparent; } 
 
 /*we'll set the background image at the very bottom*/
-body { background: center/cover var(--nvbgimg); }
+body { background: center/cover var(--nvbgimg) !important; }
 /*add the toning layer..*/
 #app-mount { background: var(--nvbgadjust); }
 
@@ -41,6 +41,7 @@ body { background: center/cover var(--nvbgimg); }
 [class^=title_], /*top toolbar*/
 [class^=children_]::after, /*toolbar overflow fadeout*/
 [class^=panels_], /*user panel*/
+[class^=chatContent_] > [class^=form_], /*chat input area in visual refresh*/
 [class^=channelTextArea_], /*chat input*/
 [class^=channelTextArea_] [class^=scrollableContainer_], /*chat input again*/
 [class^=chatContent_] > form::before, /*wtf even is this and why, discord?*/
