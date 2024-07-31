@@ -69,3 +69,9 @@
    color: var(--text-normal);
    position: absolute;
    margin: 7px; } /*improve this maybe?*/
+
+/* clean up gif picker after visual refresh*/
+[class^=categoryFade_]
+ { backdrop-filter: none !important; }
+#gif-picker-tab-panel [class^=result_]::after
+ { display: none; }
