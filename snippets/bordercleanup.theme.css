@@ -13,7 +13,8 @@
 
 [class^=peopleListItem_], /*friends list*/
 [class^=nowPlayingColumn_] [class^=scroller_], /*friends list sidebar*/
-[class^=itemCard_] /*friends list activity cards*/
+[class^=itemCard_], /*friends list activity cards*/
+[class^=sidebar_] > [class^=container_] /*channellist*/
  { border: none; }
 
 [class^=divider_][class*=hasContent_] /*chat day separator*/
