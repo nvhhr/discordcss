@@ -22,3 +22,5 @@ foreignObject[mask*="url(#"]
  { border-radius: var(--nviconradius) !important; }
 foreignObject[mask*="url(#"]
  { mask: none !important; }
+[class^=gameIcon_]
+ { border: none; }
