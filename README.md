@@ -1,7 +1,8 @@
 # Flexible theme for Discord
 
-This is my theme.
-REWRITE AND PRESETS PUBLISHED SOON™
+This is my theme.  
+REWRITE AND PRESETS PUBLISHED SOON™  
+New visual refresh threw a curveball, stand by.
 
 ![image](https://github.com/nvhhr/discordcss/assets/34724502/298bf4de-6483-4a03-a25d-6fd399c61b82)
 *Image might not always reflect current state of the theme or what it will look like for you.*
