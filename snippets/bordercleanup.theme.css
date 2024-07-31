@@ -15,7 +15,7 @@
 [class^=nowPlayingColumn_] [class^=scroller_], /*friends list sidebar*/
 [class^=itemCard_], /*friends list activity cards*/
 [class^=sidebar_] > [class^=container_], /*channellist*/
-[class^=chatContent_] > [class^=form_] /*chat input area in visual referesh*/
+[class^=chatContent_] > [class^=form_] /*chat input area in visual refresh*/
  { border: none; }
 
 [class^=divider_][class*=hasContent_] /*chat day separator*/
