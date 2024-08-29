@@ -14,8 +14,10 @@
 [class^=peopleListItem_], /*friends list*/
 [class^=nowPlayingColumn_] [class^=scroller_], /*friends list sidebar*/
 [class^=itemCard_], /*friends list activity cards*/
-[class^=sidebar_] > [class^=container_], /*channellist*/
-[class^=chatContent_] > [class^=form_] /*chat input area in visual refresh*/
+[class^=chatContent_] > [class^=form_], /*chat input area*/
+[class^=sidebar_] [class^=scroller_], /*channellist*/
+[class^=base_] > [class^=content_], /*main area*/
+[class^=panels_] /*userpanel*/
  { border: none; }
 
 [class^=divider_][class*=hasContent_] /*chat day separator*/
