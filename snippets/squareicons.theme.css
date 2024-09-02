@@ -9,7 +9,7 @@
 
 [class*=avatar_],
 [class^=replyAvatar_],
-.vc-mentionAvatars-avatar,
+.vc-mentionAvatars-icon,
 [class^=embedAuthorIcon_], /*for things like github webhook*/
 [class^=wrapperSimple_], /*servericons*/
 [class^=folder_],
