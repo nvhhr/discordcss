@@ -18,7 +18,7 @@
 [class^=sidebar_] [class^=scroller_], /*channellist*/
 [class^=base_] > [class^=content_], /*main area*/
 [class^=panels_] /*userpanel*/
- { border: none; }
+ { border: none !important; }
 
 [class^=divider_][class*=hasContent_] /*chat day separator*/
  { border: none !important;
