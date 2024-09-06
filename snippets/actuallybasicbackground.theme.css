@@ -79,3 +79,7 @@ body { background: center/cover var(--nvbgimg) !important; }
  { border-radius: 0 !important; }
 [class^=privateChannels_] > [class^=scroller_] /*user panel overlaps DM list*/
  { margin-bottom: 55px; }
+
+/*make server banner etc scroll away because of overlap*/
+[class^=sidebar_] [class^=container_]:has( > [class^=header_])
+ { position: static; }
