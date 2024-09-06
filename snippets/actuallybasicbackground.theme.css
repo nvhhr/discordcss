@@ -29,9 +29,9 @@ body { background: center/cover var(--nvbgimg) !important; }
 [class^=member_], /*each member also has a bg*/
 [class^=chat_] [class^=container_], /*forum channel*/
 [class*=mainCard_], /*forum channel entry*/
-[class*=threadSidebarOpen_] ~ [class^=resizeHandle_], /*thread sidebar resizer*/
-[class*=threadSidebarOpen_] ~ [class^=container_], /*thread sidebar*/
-[class*=threadSidebarOpen_] ~ [class^=container_] > [class^=container_], /*thread sidabar title*/
+[class^=chatLayerWrapper_] ~ [class^=resizeHandle_], /*thread sidebar resizer*/
+[class^=chatLayerWrapper_] ~ [class^=container_], /*thread sidebar*/
+[class^=chatLayerWrapper_] ~ [class^=container_] > [class^=container_], /*thread sidabar title*/
 [class^=chat_] [class^=wrapper_], /*voicechannel*/
 [class*=gradientContainer_], /*gradients in voicechannel*/
 [class^=channelChatWrapper_], /*voicechannel chat*/
