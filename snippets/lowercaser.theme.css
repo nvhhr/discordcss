@@ -8,7 +8,7 @@
 /* [class*="tooltip" i], tooltips */
 [class^=membersGroup], /* memberlist group titles */
 [class^=containerDefault_] h3, /* channellist categories */
-[class*=cozyMessage_] [class^=header_] [class^=timestamp_] /* chat timestamp texts */
+[class*=cozyMessage_] [class^=header_] [class^=timestamp_], /* chat timestamp texts */
 [class^=sidebar_] [class^="text-xs/normal_"], /*membercount under server banner*/
 [class*=topicsPillTextTitle_], /*ai summaries*/
 [class*=barBase_], /*unread bar*/
