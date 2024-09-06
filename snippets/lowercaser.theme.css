@@ -9,4 +9,13 @@
 [class^=membersGroup], /* memberlist group titles */
 [class^=containerDefault_] h3, /* channellist categories */
 [class*=cozyMessage_] [class^=header_] [class^=timestamp_] /* chat timestamp texts */
- { text-transform: lowercase !important; }
+[class^=sidebar_] [class^="text-xs/normal_"], /*membercount under server banner*/
+[class*=topicsPillTextTitle_], /*ai summaries*/
+[class*=barBase_], /*unread bar*/
+[class*=barBase_] button, /*mark as read*/
+[class^=navButton_], /*some buttons like gif/emoji picker*/
+[class^=menu_], /*menus :D*/
+[class^=headerLabel_], /*emoji picker labels*/
+[role=dialog] [class^=header_] /*dialog headers*/
+ { text-transform: lowercase !important;
+   overflow: visible; } /*this is necessary for some characters being cutoff since allcaps don't have descenders*/
