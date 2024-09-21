@@ -1,8 +1,8 @@
 # Flexible theme for Discord
 
 This is my theme.  
-REWRITE AND PRESETS PUBLISHED SOON™  
-New visual refresh threw a curveball, stand by.
+Development sort of on hold due to being busy with other stuff and Discord's new visual refresh theme changing things in unexpected ways.  
+Not sure if anyone is even using this at the moment so not pressured to work on it tbh..  
 
 ![image](https://github.com/nvhhr/discordcss/assets/34724502/298bf4de-6483-4a03-a25d-6fd399c61b82)
 *Image might not always reflect current state of the theme or what it will look like for you.*
@@ -13,9 +13,8 @@ I'll be making presets for many different looks based on this base theme, stay t
 
 This repository is still in a stage where things might change in major ways without warning, so:  
 No warranty, no promises for support.  
-Any/all functionality and look of all css here might change without any warning at any time.  
+Any/all functionality and look of all css within this repository might change without any warning at any time.  
 **The Vencord plugin "ThemeAttributes" should be enabled for best experience.**  
-I'm only really testing this on Vesktop but I try to maintain compatibility with Discord stable.
 
 To use the theme or snippets:  
 Grab the "raw" links to the files (main theme: https://raw.githubusercontent.com/nvhhr/discordcss/main/flexible.theme.css and for snippets or presets for an example: https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/dashless-extended.theme.css) and drop the links into your Vencord online themes.  
