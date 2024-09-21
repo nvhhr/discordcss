@@ -1,7 +1,7 @@
 /**
  * @name recute
  * @author nvhhr, fres
- * @description replace specific channelname, rolename and rolecolor on vencord server to previous glory
+ * @description replace specific channelname and rolename on vencord server to previous glory
 */
 
 [href="/channels/1015060230222131221/1026504914131759104"] [class^=name_],
@@ -17,7 +17,10 @@
 [class^=role_][data-list-item-id$="1026504932959977532"] [class^=roleName_]::after
  { content: "cute person";
   line-height: 1.333; }
+
+/* scrapping this because no way to make it work with random colors*
 [class^=role_][data-list-item-id$="1026504932959977532"] [class^=roleCircle_]
  { background: #6d9 !important; }
 [class^=content_]:has([class^=bannerImg_][src*="1015060230222131221"]) [class^=username_]:has(+span>span>img[aria-label*=regular])
  { color: #6d9 !important; }
+*/
