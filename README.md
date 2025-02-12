@@ -1,15 +1,8 @@
-# Flexible theme for Discord
+#discord css
+I had a theme here, but it was out of date, bad and as of recently, performance got tanked.. so:
+For a while you can find it under /archive while I create something new.
 
-This is my theme.  
-Development sort of on hold due to being busy with other stuff and Discord's new visual refresh theme changing things in unexpected ways.  
-Not sure if anyone is even using this at the moment so not pressured to work on it tbh..  
-
-![image](https://github.com/nvhhr/discordcss/assets/34724502/298bf4de-6483-4a03-a25d-6fd399c61b82)
-*Image might not always reflect current state of the theme or what it will look like for you.*
-
-I have separated many of its features as files that should work on their own, and I'm trying to make comments in the css so hopefully you can learn how it all works.  
-Also will be adding snippets that aren't included with the theme.  
-I'll be making presets for many different looks based on this base theme, stay tuned.
+I'm also reworking the snippets, targeting discord's visual refresh that's finally being rolled out.
 
 This repository is still in a stage where things might change in major ways without warning, so:  
 No warranty, no promises for support.  
