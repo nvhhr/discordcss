@@ -10,7 +10,7 @@ Any/all functionality and look of all css within this repository might change wi
 **The Vencord plugin "ThemeAttributes" should be enabled for best experience.**  
 
 To use the theme or snippets:  
-Grab the "raw" links to the files (main theme: https://raw.githubusercontent.com/nvhhr/discordcss/main/flexible.theme.css and for snippets or presets for an example: https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/dashless-extended.theme.css) and drop the links into your Vencord online themes.  
+Grab the "raw" links to the files, example: https://raw.githubusercontent.com/nvhhr/discordcss/main/snippets/dashless-extended.theme.css - and drop the links into your Vencord online themes. 
 
 Alternatively, download the file and put it in your theme folder or copypaste it into your quickCSS.  
 That way you'll be able to make any changes locally, and I won't be able to break your stuff while this is still evolving.
