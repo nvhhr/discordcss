@@ -1,4 +1,3 @@
-#discordcss
 I had a theme here, but it was out of date, bad and as of recently, performance got tanked.. so:
 For a while you can find it under /archive while I create something new.
 
