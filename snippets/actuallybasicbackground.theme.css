@@ -14,7 +14,7 @@
 /*we'll set the background image at the very bottom*/
 body { background: center/cover var(--nvbgimg) !important; }
 /*add the toning layer..*/
-#app-mount { background: var(--nvbgadjust); }
+#app-mount { background: var(--nvbgadjust) !important; }
 
 /*then we clear out backgrounds from a bunch of elements*/
 [class^=app_], /*main app bg*/
@@ -62,7 +62,15 @@ body { background: center/cover var(--nvbgimg) !important; }
 [class^=shop_], /*shop tab content*/
 [class^=shop_] > section, /*shop top bar*/
 [class^=shopScroll_], /*shop content*/
-[class^=pageWrapper_] /*again*/
+[class^=pageWrapper_], /*again*/
+[id^=vc-indicators-indicator-items], /*online friend count if plugin is enabled*/
+[class^=sidebar_]::after, /*tiny little area under the profile display*/
+[class^=layer_],
+[class^=sidebarRegion_], /* settings shit */
+[class^=contentRegion_],
+[class^=contentRegionScroller_], /* main region */
+[class^=sidebarRegionScroller_], /* sidebar region */
+[class^=standardSidebarView_]
  { background: none !important; }
 
 /*remove some shadows*/
