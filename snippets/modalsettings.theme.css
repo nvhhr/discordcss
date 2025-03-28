@@ -5,7 +5,9 @@
 */
 
 [class^=standardSidebarView_]
- { top: 0 !important; }
+ { top: 0 !important;
+   backdrop-filter: blur(20px);
+   background: oklch(.3 0 0deg / .3) !important; }
 [class^=layer_] + [class^=layer_]:has([class^=standardSidebarView_])
  { border-radius: var(--radius-md);
    box-shadow: var(--shadow-high);
