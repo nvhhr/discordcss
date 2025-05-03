@@ -55,12 +55,6 @@ Maybe some day `currentColor` works with relative colors like `hsl(from currentC
 <img src="https://github.com/nvhhr/discordcss/assets/34724502/693b3827-85f3-4b3e-8405-fd24bd1428eb">
 </details>
 
-**[nocaption:](nocaption.theme.css)**  
-Remove titlebar, adjust toolbar a bit and create a drag area under window buttons.
-<details> <summary>:sunrise_over_mountains:screenshot</summary>
-<img src="https://github.com/nvhhr/discordcss/assets/34724502/fc8ed5f0-4d3d-410e-8a52-725b61512ab5">
-</details>
-
 **[pingedserversfirst:](pingedserversfirst.theme.css)**  
 Move pinged servers and folders to top of serverlist and containing folder.
 <details> <summary>:sunrise_over_mountains:screenshot</summary>
