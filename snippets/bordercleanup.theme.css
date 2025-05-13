@@ -4,25 +4,11 @@
  * @description discords without borders, for a cleaner look
 */
 
-/*clean up separators and unnecessary borders*/
-[class^=titleWrapper_] + [class^=divider_], /*channelname|topic divider */
-[class^=sectionDivider_], /*channellist divider*/
-[class^=container_]::after, /*channellist divider*/
-[class^=guildSeparator_] /*under dm button*/
- { display: none; }
-
-[class^=peopleListItem_], /*friends list*/
-[class^=nowPlayingColumn_] [class^=scroller_], /*friends list sidebar*/
-[class^=itemCard_], /*friends list activity cards*/
-[class^=chatContent_] > [class^=form_], /*chat input area*/
-[class^=sidebar_] [class^=scroller_], /*channellist*/
-[class^=sidebar_] [class^=container_]:has( > [class^=header_]), /*server info thing in channellist*/
-[class^=base_] > [class^=content_], /*main area*/
-[class^=panels_] /*userpanel*/
- { border: none !important; }
-
-[class^=divider_][class*=hasContent_] /*chat day separator*/
- { border: none !important;
-   justify-content: start !important; }
-
-
+:root,
+.theme-dark,
+.theme-light
+ { --app-border-frame: transparent !important;
+   --border-subtle: transparent !important;
+   --border-faint: transparent !important;
+   --divider-subtle: transparent !important;
+   --background-modifier-accent: transparent !important; }
