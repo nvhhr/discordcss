@@ -24,9 +24,11 @@ body { background: center/cover var(--nvbgimg) !important; }
 [class^=sidebar_] [class^=container_], /*another layer on channellist*/
 [class^=page_] > [class^=chat_] > section, /*channels & roles top bar*/
 [class^=page_] > [class^=chat_] > [class^=content_], /*channels & roles page*/
+[class^=pageBody_], /*channels & roles channel selection page*/
 [class^=page_] > [class^=chat_], /*members page*/
 [class^=chat_], /*chat bg*/
 [class^=chatContent_], /*another layer on chat*/
+[class^=topicsPillContainer_], /*summaries bar*/
 [class^=chatContent_] + [class^=container_], /*memberlist*/
 [class^=members_], /*another layer on memberlist*/
 [class^=member_], /*each member also has a bg*/
@@ -37,11 +39,19 @@ body { background: center/cover var(--nvbgimg) !important; }
 [class^=chatLayerWrapper_] > [class^=container_], /*thread sidebar*/
 [class^=chatLayerWrapper_] > [class^=container_] > [class^=container_], /*thread sidabar title*/
 [class^=chat_] [class^=wrapper_], /*voicechannel*/
-[class*=gradientContainer_], /*gradients in voicechannel*/
+[class^=callContainer_], /*voicechannel again*/
+[class^=callContainer_] > [class^=root_], /*voicechannel yet again*/
+[class^=gradientBackground_], /*gradients in voicechannel*/
+[class^=gradientBackground_] > [class*=sphere_], /*more gradients in voicechannel*/
 [class^=channelChatWrapper_], /*voicechannel chat*/
 [class^=chatTarget_], /*voicechannel chat again*/
 [class^=channelChatWrapper_] [class^=resizeHandle_], /*voicechannel chat resizer*/
 [class^=channelChatWrapper_] [class^=container_], /*voicechannel chat yet again*/
+[class^=rowContainer_], /*stage channel speakers*/
+[class^=root_] [class^=scroller_], /*stage channel audience*/
+[class^=participants_], /*stage channel audience members background*/
+[class^=participants_] > [class^=tileContainer_], /*stage channel audience member*/
+[class^=container_] > [class^=container_] > section, /*stage channel request to speak top bar*/
 [class^=title_], /*top toolbar*/
 [class^=children_]::after, /*toolbar overflow fadeout*/
 [class^=panels_], /*user panel*/
@@ -92,6 +102,8 @@ body { background: center/cover var(--nvbgimg) !important; }
  { border-radius: 0 !important; }
 [class^=privateChannels_] > [class^=scroller_] /*user panel overlaps DM list*/
  { margin-bottom: 55px; }
+[class^=gradientBackground_]
+ { display: none; } /*remove leftover blurred gradient in VCs*/
 
 /*make server banner etc scroll away because of overlap*/
 [class^=sidebar_] [class^=container_]:has( > [class^=header_])
