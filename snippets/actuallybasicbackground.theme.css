@@ -64,6 +64,7 @@ body { background: center/cover var(--nvbgimg) !important; }
 [data-list-id="chat-messages"] > [class^=wrapper_] > [class^=wrapper_], /*skeleton has many bones in it*/
 [class^=privateChannels_], /*DM list*/
 [class^=privateChannels_] [class^=scroller_], /*DM list again*/
+[class^=page_] [class^=chat_] > section, /*message requests top bar*/
 [class*=userProfileOuterUnthemed_], /*DM right sidebar when user has no profile theme*/
 [class*=userProfileOuterUnthemed_] [class^=userPanelInner_], /*same*/
 [class^=page_] > [class^=container_], /*friends list page*/
