@@ -52,7 +52,6 @@ body { background: center/cover var(--nvbgimg) !important; }
 [class^=participants_], /*stage channel audience members background*/
 [class^=participants_] > [class^=tileContainer_], /*stage channel audience member*/
 [class^=container_] > [class^=container_] > section, /*stage channel request to speak top bar*/
-[class^=chat_] > [class^=wrapper_], /*channel activity background*/
 [class^=title_], /*top toolbar*/
 [class^=children_]::after, /*toolbar overflow fadeout*/
 [class^=panels_], /*user panel*/
@@ -106,6 +105,9 @@ body { background: center/cover var(--nvbgimg) !important; }
  { margin-bottom: 55px; }
 [class^=gradientBackground_]
  { display: none; } /*remove leftover blurred gradient in VCs*/
+[class^=chat_] > [class^=wrapper_]
+ { background: var(--background-mod-subtle);
+   border-left: 1px solid var(--border-subtle); }
 
 /*make server banner etc scroll away because of overlap*/
 [class^=sidebar_] [class^=container_]:has( > [class^=header_])
