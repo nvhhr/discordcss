@@ -19,9 +19,11 @@
 [class^=expandedFolderBackground_],
 [class^=gameIcon_], /*activity icon in channellist*/
 [class^=applicationLargeImage_], /*activity icon in popup*/
+[class^=badge_], /*badges in profile*/
 foreignObject[mask*="url(#"]
  { border-radius: var(--nviconradius) !important; }
 foreignObject[mask*="url(#"]
  { mask: none !important; }
 [class^=gameIcon_]
  { border: none; }
+
