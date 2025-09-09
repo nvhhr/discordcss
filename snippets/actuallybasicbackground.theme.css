@@ -79,6 +79,10 @@ body { background: center/cover var(--nvbgimg) !important; }
 [class^=shopViewWrapper_] > section, /*shop top bar*/
 [class^=shopScroll_], /*shop content*/
 [class^=pageWrapper_], /*again*/
+[class^=sidebarList_] > [class^=container_], /* discovery bg */
+[class^=headerBar_] > [class^=backdrop_], /* header backdrop */
+[class^=innerContainer_] > [class^=scroller_], /* apps discovery bg */
+[class^=container_] > [class^=scroller_], /* quests discovery */
 [id^=vc-indicators-indicator-items], /*online friend count if plugin is enabled*/
 [class^=sidebar_]::after, /*tiny little area under the profile display*/
 [class^=layer_],
@@ -108,6 +112,8 @@ body { background: center/cover var(--nvbgimg) !important; }
 [class^=chat_] > [class^=wrapper_]
  { background: var(--background-mod-subtle);
    border-left: 1px solid var(--border-subtle); }
+[class^=headerBar_]::after /* remove header bottom border */
+  { display: none; }
 
 /*make server banner etc scroll away because of overlap*/
 [class^=sidebar_] [class^=container_]:has( > [class^=header_])
