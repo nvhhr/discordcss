@@ -7,9 +7,8 @@
 [class^=standardSidebarView_]
  { top: 0 !important;
    backdrop-filter: blur(20px);
-   background: oklch(.3 0 0deg / .3) !important; }
-[class^=layer_] + [class^=layer_]:has([class^=standardSidebarView_])
- { border-radius: var(--radius-md);
+   background: oklch(.3 0 0deg / .3) !important;
+   border-radius: var(--radius-md);
    box-shadow: var(--shadow-high);
    border: 1px solid var(--border-strong);
    width: 1100px;
@@ -18,13 +17,8 @@
    padding: 0;
    transform: unset; }
 
-/* keep view under settings */
-#app-mount [class*=baseLayer_] 
- { opacity: 1 !important; 
-   transform: unset; }
-
-/* fix closing delay */
+/* fix closing delay 
 [class^=layer_][aria-hidden="false"] + [class^=layer_][aria-hidden="false"]
  { display: none; } 
 [class^=layers_]> [class^=layer_][class*=animating_]
- { will-change: unset; }
+ { will-change: unset; }*/
