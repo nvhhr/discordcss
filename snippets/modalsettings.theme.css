@@ -17,6 +17,10 @@
    padding: 0;
    transform: unset; }
 
+/* keep view under settings */
+[class*=baseLayer_]
+ { opacity: 1 !important; }
+
 /* fix closing delay 
 [class^=layer_][aria-hidden="false"] + [class^=layer_][aria-hidden="false"]
  { display: none; } 
