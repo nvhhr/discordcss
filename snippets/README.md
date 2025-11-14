@@ -3,7 +3,8 @@ I try to make the snippets work through discord updates and with any themes to s
 You can hit me up on Vencord theme dev channel, or post issues or contributions here if you desire.  
 Screenshots may not be exactly what you will see (depending on many factors) or may be slightly out of date.  
 Recommended way to customize the variables in each snippet is to use the snippets in Vencord online themes or imports, and copying the variables (:root block) into quickcss and modifying them there.  
-**The snippets are still in active development and I reserve the right to make breaking changes.**
+The snippets can sometimes be old but should still work for the most part, I use them too and update them occasionally.  
+They should be always considered to be in development and I reserve the right to make breaking changes.
 
 **[actuallybasicbackground:](actuallybasicbackground.theme.css)**  
 A pretty simple but highly targeted style to set a background image at the bottom and clear out backgrounds from certain elements in front.
