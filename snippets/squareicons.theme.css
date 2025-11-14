@@ -20,10 +20,18 @@
 [class^=gameIcon_], /*activity icon in channellist*/
 [class^=applicationLargeImage_], /*activity icon in popup*/
 [class^=badge_], /*badges in profile*/
+[class^=mutuals_] [class^=icon_], /*mutual servers in profile*/
+[class^=bannerButton_], /*top buttons in profile*/
+[class^=avatar_] > [class^=wrapper_], /*avatar hover overlay in profile*/
+.vc-gp-owner-avatar, /*server owner in serverinfo*/
+#mutual_guilds-tab [class^=icon_],
+[class^=platformIconContainer_], /*connections in big profile, looks way better without bg but whatever*/
 foreignObject[mask*="url(#"]
  { border-radius: var(--nviconradius) !important; }
-foreignObject[mask*="url(#"]
+foreignObject[mask*="url(#"],
+[class^=partyMember_] /*avatars in summaries and maybe other places*/
  { mask: none !important; }
 [class^=gameIcon_]
  { border: none; }
+
 
