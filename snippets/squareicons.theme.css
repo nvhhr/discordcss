@@ -11,6 +11,7 @@
 [class^=replyAvatar_],
 .vc-mentionAvatars-icon,
 [class^=embedAuthorIcon_], /*for things like github webhook*/
+[class^=executedCommandAvatar_], /*users using apps*/
 [class^=wrapperSimple_], /*servericons*/
 [class*=iconActiveSmaller_], /*new titlebar servericon*/
 [class^=folder_],
@@ -34,6 +35,7 @@ foreignObject[mask*="url(#"],
  { mask: none !important; }
 [class^=gameIcon_]
  { border: none; }
+
 
 
 
