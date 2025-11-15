@@ -22,6 +22,7 @@
 [class^=badge_], /*badges in profile*/
 [class^=mutuals_] [class^=icon_], /*mutual servers in profile*/
 [class^=bannerButton_], /*top buttons in profile*/
+.user-profile-popout button,
 [class^=avatar_] > [class^=wrapper_], /*avatar hover overlay in profile*/
 .vc-gp-owner-avatar, /*server owner in serverinfo*/
 #mutual_guilds-tab [class^=icon_],
@@ -33,5 +34,6 @@ foreignObject[mask*="url(#"],
  { mask: none !important; }
 [class^=gameIcon_]
  { border: none; }
+
 
 
