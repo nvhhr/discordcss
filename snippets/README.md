@@ -1,3 +1,6 @@
+# EVERYTHING IS BROKEN RIGHT NOW 
+I'll fix these one at a time, probably rewriting some from scratch so some alterations should be expected
+
 ### Collection of pretty simple css snippets, some having variables to modify.
 I try to make the snippets work through discord updates and with any themes to some extent. I also have many comments and stuff inside the css.  
 You can hit me up on Vencord theme dev channel, or post issues or contributions here if you desire.  
