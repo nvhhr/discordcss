@@ -1,5 +1,4 @@
-I had my full theme here, but it was out of date, reduced performance a lot due to discord changes and nobody used it afaik, so I shoved it into /archive.  
-I had plans on a new theme and probably will make one eventually that others might also enjoy but who knows when I feel like making it.
+# EVERYTHING IS BROKEN RIGHT NOW
 
 I'm updating the snippets occasionally.
 
