@@ -5,7 +5,7 @@
 */
 
 /* set a background-image on dm button */
-[data-list-item-id=guildsnav___home] > [class^=childWrapper_]
+[data-list-item-id=guildsnav___home] > [class*=-childWrapper]
  { background-image: url("https://i.imgur.com/ekIk6Ux.png");
    background-position: center;
    background-repeat: no-repeat;
