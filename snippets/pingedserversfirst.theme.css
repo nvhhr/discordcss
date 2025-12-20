@@ -10,25 +10,25 @@
    flex-direction: column; } /*fix layout*/
 
 /*find servers and folders that have a number badge and force them up*/
-[data-list-id="guildsnav"] [role="group"] :is([class^=listItem_],[class^=folderGroup_]):has([class^=numberBadge_])
+[data-list-id="guildsnav"] [role="group"] :is([class$=-listItem],[class*=-folderGroup]):has([class*=-numberBadge])
  { order: -1; }
 
 /*
 selective use instructions:
 
 to use as a whitelist, do this:
-[data-list-id="guildsnav"] [role="group"] :is([class^=listItem_],[class^=folderGroup_]):has([class^=numberBadge_]):has([data-dnd-name*="ServerName Here"]),
-[data-list-id="guildsnav"] [role="group"] :is([class^=listItem_],[class^=folderGroup_]):has([class^=numberBadge_]):has([data-dnd-name*="Another Server"]),
-[data-list-id="guildsnav"] [role="group"] :is([class^=listItem_],[class^=folderGroup_]):has([class^=numberBadge_]):has([data-dnd-name*="Et cetera"])
+[data-list-id="guildsnav"] [role="group"] :is([class$=-listItem],[class*=-folderGroup]):has([class*=-numberBadge]):has([data-dnd-name*="ServerName Here"]),
+[data-list-id="guildsnav"] [role="group"] :is([class$=-listItem],[class*=-folderGroup]):has([class*=-numberBadge]):has([data-dnd-name*="Another Server"]),
+[data-list-id="guildsnav"] [role="group"] :is([class$=-listItem],[class*=-folderGroup]):has([class*=-numberBadge]):has([data-dnd-name*="Et cetera"])
  { order: -1; }
 
 another solution, to survive server name changes or when you have servers which contain name of other server,
 you can use server IDs, but this will not work with folders.
-[data-list-id="guildsnav"] [role="group"] :is([class^=listItem_],[class^=folderGroup_]):has([class^=numberBadge_]):has([data-list-item-id="guildsnav___1015060230222131221"])
+[data-list-id="guildsnav"] [role="group"] :is([class$=-listItem],[class*=-folderGroup]):has([class*=-numberBadge]):has([data-list-item-id="guildsnav___1015060230222131221"])
 
 to exclude servers:
-[data-list-id="guildsnav"] [role="group"] :is([class^=listItem_],[class^=folderGroup_]):has([class^=numberBadge_]):has([data-dnd-name*="ServerName Here"]),
-[data-list-id="guildsnav"] [role="group"] :is([class^=listItem_],[class^=folderGroup_]):has([class^=numberBadge_]):has([data-dnd-name*="Another Server"]),
-[data-list-id="guildsnav"] [role="group"] :is([class^=listItem_],[class^=folderGroup_]):has([class^=numberBadge_]):has([data-dnd-name*="Et cetera"])
+[data-list-id="guildsnav"] [role="group"] :is([class$=-listItem],[class*=-folderGroup]):has([class*=-numberBadge]):has([data-dnd-name*="ServerName Here"]),
+[data-list-id="guildsnav"] [role="group"] :is([class$=-listItem],[class*=-folderGroup]):has([class*=-numberBadge]):has([data-dnd-name*="Another Server"]),
+[data-list-id="guildsnav"] [role="group"] :is([class$=-listItem],[class*=-folderGroup]):has([class*=-numberBadge]):has([data-dnd-name*="Et cetera"])
  { order: 0; }
 */
