@@ -1,6 +1,4 @@
-# EVERYTHING IS BROKEN RIGHT NOW
-
-I'm updating the snippets occasionally.
+I'm updating the snippets occasionally. Right now some things are broken. Not sure when I'll get around to fixing things.
 
 No warranty, no promises for support.  
 Any/all functionality and look of all css within this repository might change without any warning at any time.  
