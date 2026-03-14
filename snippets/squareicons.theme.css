@@ -25,14 +25,15 @@
 [class^=mutuals_] [class^=icon_], /*mutual servers in profile*/
 [class^=bannerButton_], /*top buttons in profile*/
 .user-profile-popout button,
-[class^=avatar_] > [class^=wrapper_], /*avatar hover overlay in profile*/
+[class^=overlay_]::after, /*avatar hover overlay in profile*/
 .vc-gp-owner-avatar, /*server owner in serverinfo*/
 #mutual_guilds-tab [class^=icon_],
 [class^=platformIconContainer_], /*connections in big profile, looks way better without bg but whatever*/
 foreignObject[mask*="url(#"]
  { border-radius: var(--nviconradius) !important; }
 foreignObject[mask*="url(#"],
-[class^=partyMember_] /*avatars in summaries and maybe other places*/
+[class^=partyMember_], /*avatars in summaries and maybe other places*/
+[class^=avatar_] /*mutual friends*/
  { mask: none !important; }
 [class^=gameIcon_]
  { border: none; }
