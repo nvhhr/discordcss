@@ -20,6 +20,7 @@ body { background: center/cover var(--nvbgimg) !important; }
 [class^=app_], /*main app bg*/
 [class^=bg_], /*another bg layer*/
 [class*=guilds_], /*serverlist*/
+[data-list-id="guildsnav"] > [class^=itemsContainer_], /*serverlist if gradient theme enabled*/
 [class^=sidebar_], /*channellist*/
 [class^=sidebar_] [class^=container_], /*another layer on channellist*/
 [class^=page_] > [class^=chat_] > section, /*channels & roles top bar*/
