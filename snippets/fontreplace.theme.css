@@ -36,5 +36,6 @@ html,
 [class^=name_],
 [class*=item_],
 [class*=description_],
-[class*=tooltip_]
+[class*=tooltip_],
+[class^=guildTooltipWrapper_]
  { font-size: var(--nvfontsize) !important; }
