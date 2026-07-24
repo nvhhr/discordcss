@@ -21,7 +21,7 @@
    unfortunately css variables aren't supported inside font-face */
 
 /* apply this hack to all the following */
-[data-list-item-id^=channels___]:not([role=button]), /* channel list */
+[data-list-item-id^=channels___]:not([role=button]) [class^=text], /* channel list */
 [class^=titleWrapper] > h1, /* top bar with topic */
 [class^=titleWrapper] > h2, /* top bar in thread view */
 [id^=":r"] > h1, /* topic popup */
